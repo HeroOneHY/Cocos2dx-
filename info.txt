@@ -1,0 +1,17 @@
+Platform->iOS:CCEAGLView-ios.h:CCEAGLView:oc UIView类，提供CAEAGLLayer的View服务类，swapBuffers：交换双缓冲framebuffer到屏幕，multisampling_：msaa多重采样，samplesToUse_：多重采样参数相关，context_：opengl上下文，由CCES2Renderer类提供，preserveBackbuffer_：CAEAGLLayer生成时的参数之一，用来标志是否缓存重用以前绘制过的图像，设为no，pixelformat_：颜色缓冲区格式，depthFormat_：深度缓冲区格式，discardFramebufferSupported_：清除纹理附件，surfaceSize：缓冲区size，getWidth：getHeight：view的宽高
+
+
+Platform->iOS:CCES2Renderer-ios.h:CCES2Renderer:oc NSObject类，提供负责生成framebuffer或者msaa framebuffer，CCEAGLView调用layoutsubview时会重新生成相应的framebuffer
+
+
+Platform->iOS:CCGLViewImpl-ios.h:GLViewImpl类：c++类，继承与GLView，他是oc类CCEAGLView和c++的桥梁，void *_eaglview：指针指向CCEAGLView，Director持有GLViewImpl类的指针来控制屏幕渲染
+
+
+Platform->iOS:CCDirectorCaller-ios.h:CCDirectorCaller：iOS类：负责启动、停止一个runloop
+
+Platform->iOS:CCApplication-ios.h：Application：类似于appdelegate，class Application继承于他，-》run方法启动CCDirectorCaller的loop
+
+renderer->CCRenderer.h:RenderQueue: 存放RenderCommand的类，std::vector<RenderCommand*> _commands[QUEUE_COUNT]：这是一个存放vector<RenderCommand*> 类型的一个数组，数组下标为一个枚举类型QUEUE_GROUP，vector<RenderCommand*>存放RenderCommand命令
+
+renderer->CCRenderer.h:Renderer::Renderer()： _commandGroupStack.push(DEFAULT_RENDER_QUEUE)：group是个栈结构，初始化时先push一个default queue，但是这个存储的就是一个索引，_renderGroups存储相关的RenderQueue对象，Renderer::addCommand会先获取栈顶group再执行addCommand方法，
+

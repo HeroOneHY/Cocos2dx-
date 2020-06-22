@@ -110,7 +110,7 @@ bool HelloWorld::init()
     }
     else
     {
-        float xo=origin.x+100;
+        float xo=origin.x;
         float yo=origin.y;
         // position the sprite on the center of the screen
         sprite->setPosition(xo,yo);
@@ -118,7 +118,7 @@ bool HelloWorld::init()
         // add the sprite as a child to this layer
         this->addChild(sprite, 0);
     }
- 
+    
     /* //3d骨骼动画
     std::string fileName = "climbing.c3b";
     cocos2d::Sprite3D *    man = Sprite3D::create(fileName);
