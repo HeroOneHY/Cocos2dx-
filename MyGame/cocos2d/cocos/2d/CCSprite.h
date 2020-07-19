@@ -706,10 +706,10 @@ protected:
     Vec2 _unflippedOffsetPositionFromCenter;
 
     // vertex coords, texture coords and color info
-    V3F_C4B_T2F_Quad _quad;
+    V3F_C4B_T2F_Quad _quad; //4个顶点，代表一个正方形
     V3F_C4B_T2F* _trianglesVertex;
     unsigned short* _trianglesIndex;
-    PolygonInfo  _polyInfo;
+    PolygonInfo  _polyInfo; //多边形模型数据
 
     // opacity and RGB protocol
     bool _opacityModifyRGB;

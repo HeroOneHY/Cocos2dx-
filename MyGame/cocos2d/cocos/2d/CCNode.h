@@ -1545,6 +1545,8 @@ public:
      * The matrix is in Pixels.
      *
      * @return The transformation matrix.
+     *
+     * 返回将节点（局部）空间坐标转换为父节点空间坐标的矩阵
      */
     virtual const Mat4& getNodeToParentTransform() const;
     virtual AffineTransform getNodeToParentAffineTransform() const;
@@ -1902,7 +1904,7 @@ private:
     
 protected:
 
-    float _rotationX;               ///< rotation on the X-axis
+    float _rotationX;               ///< rotation on the X-axis x轴旋转角度
     float _rotationY;               ///< rotation on the Y-axis
 
     // rotation Z is decomposed in 2 to simulate Skew for Flash animations
@@ -1911,11 +1913,11 @@ protected:
     
     Quaternion _rotationQuat;       ///rotation using quaternion, if _rotationZ_X == _rotationZ_Y, _rotationQuat = RotationZ_X * RotationY * RotationX, else _rotationQuat = RotationY * RotationX
 
-    float _scaleX;                  ///< scaling factor on x-axis
+    float _scaleX;                  ///< scaling factor on x-axis x轴缩放比例
     float _scaleY;                  ///< scaling factor on y-axis
     float _scaleZ;                  ///< scaling factor on z-axis
 
-    Vec2 _position;                 ///< position of the node
+    Vec2 _position;                 ///< position of the node 结点位置
     float _positionZ;               ///< OpenGL real Z position
     Vec2 _normalizedPosition;
     bool _usingNormalizedPosition;

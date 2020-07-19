@@ -13,5 +13,19 @@ Platform->iOS:CCApplication-ios.h：Application：类似于appdelegate，class A
 
 renderer->CCRenderer.h:RenderQueue: 存放RenderCommand的类，std::vector<RenderCommand*> _commands[QUEUE_COUNT]：这是一个存放vector<RenderCommand*> 类型的一个数组，数组下标为一个枚举类型QUEUE_GROUP，vector<RenderCommand*>存放RenderCommand命令
 
-renderer->CCRenderer.h:Renderer::Renderer()： _commandGroupStack.push(DEFAULT_RENDER_QUEUE)：group是个栈结构，初始化时先push一个default queue，但是这个存储的就是一个索引，_renderGroups存储相关的RenderQueue对象，Renderer::addCommand会先获取栈顶group再执行addCommand方法，
+renderer->CCRenderer.h:Renderer::Renderer()： _commandGroupStack.push(DEFAULT_RENDER_QUEUE)：group是个栈结构，初始化时先push一个default queue，但是这个存储的就是一个索引，_renderGroups存储相关的RenderQueue对象，Renderer::addCommand会先获取栈顶group再执行addCommand方法,Renderer::processRenderCommand(RenderCommand* command)方法：根据不同的command来绘制不同的类型，Renderer::visitRenderQueue(RenderQueue& queue)方法：访问queue，绘制每一个command，Renderer::render()方法：访问queue并绘制每一个command
+
+
+Sprite：精灵类，使用的shader为renderer->shaders->ccShader_PositionTextureColor_noMVP.vert、frag，CC_PMatrix在Director::setProjection(Projection projection)初始化
+
+坐标系统和屏幕适配，怎么把gl坐标系和UI坐标系关联：CC_PMatrix投影使坐标归一化？
+
+_screenSize：实际屏幕尺寸；_designResolutionSize：预设的分辨率；_scaleX、_scaleY：_designResolutionSize的缩放比例，使能保持_designResolutionSize的比例，又能充满屏幕；_designResolutionSize.width * _scaleX，_designResolutionSize.height * _scaleY：用来设置viewport，注意viewport可以从负坐标开始
+如：_screenSize（750，1334），_designResolutionSize（480，920），_scalex=_scale=1.5625,viewport(750,1437.5),VisibleSize(480,853.76)
+
+Camera::initDefault()初始化一个透视矩阵，能归一化矩阵
+
+
+
+
 

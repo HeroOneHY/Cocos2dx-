@@ -69,7 +69,7 @@ Scene::Scene()
     
     _cameraOrderDirty = true;
     
-    //create default camera
+    //create default camera scene创建时会添加一个默认相机
     _defaultCamera = Camera::create();
     addChild(_defaultCamera);
     

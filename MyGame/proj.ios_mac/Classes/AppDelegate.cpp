@@ -41,7 +41,7 @@ using namespace CocosDenshion;
 #endif
 
 USING_NS_CC;
-
+//designResolutionSize:预设的屏幕分辨率，winsize：屏幕实际分辨率
 static cocos2d::Size designResolutionSize = cocos2d::Size(480, 920);
 static cocos2d::Size smallResolutionSize = cocos2d::Size(480, 320);
 static cocos2d::Size mediumResolutionSize = cocos2d::Size(1024, 768);
@@ -97,15 +97,17 @@ bool AppDelegate::applicationDidFinishLaunching() {
     director->setAnimationInterval(1.0f / 60);
 
     // Set the design resolution
+    //glview设置DesignResolution之后会更新viewport等内容
     glview->setDesignResolutionSize(designResolutionSize.width, designResolutionSize.height, ResolutionPolicy::NO_BORDER);
     //2d骨骼动画添加
    // FileUtils::getInstance()->addSearchPath("mygames/");
     
-    auto frameSize = glview->getFrameSize();
+    auto frameSize = glview->getFrameSize(); //屏幕分辨率
     // if the frame's height is larger than the height of medium size.
     if (frameSize.height > mediumResolutionSize.height)
     {        
-        director->setContentScaleFactor(MIN(largeResolutionSize.height/designResolutionSize.height, largeResolutionSize.width/designResolutionSize.width));
+       //分别计算宽高的缩放比例，以比较小的那一个为准
+  director->setContentScaleFactor(MIN(largeResolutionSize.height/designResolutionSize.height, largeResolutionSize.width/designResolutionSize.width));
     }
     // if the frame's height is larger than the height of small size.
     else if (frameSize.height > smallResolutionSize.height)

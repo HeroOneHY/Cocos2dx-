@@ -591,7 +591,7 @@ void Director::pushMatrix(MATRIX_STACK_TYPE type)
     }
     else if(type == MATRIX_STACK_TYPE::MATRIX_STACK_PROJECTION)
     {
-        _projectionMatrixStackList[0].push(_projectionMatrixStackList[0].top());
+_projectionMatrixStackList[0].push(_projectionMatrixStackList[0].top());
     }
     else if(type == MATRIX_STACK_TYPE::MATRIX_STACK_TEXTURE)
     {
@@ -605,7 +605,7 @@ void Director::pushMatrix(MATRIX_STACK_TYPE type)
 
 void Director::pushProjectionMatrix(size_t index)
 {
-    _projectionMatrixStackList[index].push(_projectionMatrixStackList[index].top());
+_projectionMatrixStackList[index].push(_projectionMatrixStackList[index].top());
 }
 
 const Mat4& Director::getMatrix(MATRIX_STACK_TYPE type) const
@@ -634,7 +634,7 @@ const Mat4& Director::getProjectionMatrix(size_t index) const
 
 void Director::setProjection(Projection projection)
 {
-    Size size = _winSizeInPoints;
+    Size size = _winSizeInPoints; //被设计的屏幕分辨率
 
     if (size.width == 0 || size.height == 0)
     {

@@ -49,7 +49,7 @@ bool HelloWorld::init()
     {
         return false;
     }
-
+    Director::getInstance()->setDisplayStats(false);
     auto visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
@@ -113,8 +113,9 @@ bool HelloWorld::init()
         float xo=origin.x;
         float yo=origin.y;
         // position the sprite on the center of the screen
-        sprite->setPosition(xo,yo);
+        sprite->setPosition(0,0);
         sprite->setAnchorPoint(Vec2(0, 0));
+        sprite->setContentSize(visibleSize);
         // add the sprite as a child to this layer
         this->addChild(sprite, 0);
     }

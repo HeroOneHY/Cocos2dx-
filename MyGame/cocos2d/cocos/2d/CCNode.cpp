@@ -1721,9 +1721,9 @@ const Mat4& Node::getNodeToParentTransform() const
         // Build Transform Matrix = translation * rotation * scale
         Mat4 translation;
         //move to anchor point first, then rotate
-        Mat4::createTranslation(x, y, z, &translation);
+        Mat4::createTranslation(x, y, z, &translation); //平移矩阵
         
-        Mat4::createRotation(_rotationQuat, &_transform);
+        Mat4::createRotation(_rotationQuat, &_transform);//旋转矩阵
         
         if (_rotationZ_X != _rotationZ_Y)
         {
@@ -1743,6 +1743,7 @@ const Mat4& Node::getNodeToParentTransform() const
         }
         _transform = translation * _transform;
 
+        //缩放
         if (_scaleX != 1.f)
         {
             _transform.m[0] *= _scaleX, _transform.m[1] *= _scaleX, _transform.m[2] *= _scaleX;

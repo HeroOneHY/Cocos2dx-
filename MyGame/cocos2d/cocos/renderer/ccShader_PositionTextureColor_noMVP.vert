@@ -38,7 +38,9 @@ varying vec2 v_texCoord;
 
 void main()
 {
-    gl_Position = CC_PMatrix * a_position;
+    //为啥x加减不生效。因为齐次坐标没有归一化
+    vec4 pos = CC_PMatrix * a_position;
+    gl_Position = vec4(pos.x/pos.w,pos.y/pos.w,pos.z/pos.w,pos.w/pos.w);
     v_fragmentColor = a_color;
     v_texCoord = a_texCoord;
 }

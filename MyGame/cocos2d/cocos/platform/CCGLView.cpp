@@ -137,25 +137,28 @@ void GLView::updateDesignResolutionSize()
         _scaleY = (float)_screenSize.height / _designResolutionSize.height;
         
         if (_resolutionPolicy == ResolutionPolicy::NO_BORDER)
-        {
+        {//放大到最大，保证没有黑边
             _scaleX = _scaleY = MAX(_scaleX, _scaleY);
         }
         
         else if (_resolutionPolicy == ResolutionPolicy::SHOW_ALL)
-        {
+        {//保证宽或高能完全显示，可能会有一部分孔隙即黑边
             _scaleX = _scaleY = MIN(_scaleX, _scaleY);
         }
         
         else if ( _resolutionPolicy == ResolutionPolicy::FIXED_HEIGHT) {
+            //高度优先
             _scaleX = _scaleY;
             _designResolutionSize.width = ceilf(_screenSize.width/_scaleX);
         }
         
         else if ( _resolutionPolicy == ResolutionPolicy::FIXED_WIDTH) {
+            //宽度优先
             _scaleY = _scaleX;
             _designResolutionSize.height = ceilf(_screenSize.height/_scaleY);
         }
         
+        //屏幕尺寸为_screenSize，设计的尺寸为_designResolutionSize，为了保持设计尺寸的比例会扩大或缩小_designResolutionSize到_designResolutionSize2，这时viewport会超出原来的屏幕尺寸，那么-1 - 1不一定是屏幕边界了，可能是屏幕边界外
         // calculate the rect of viewport
         float viewPortW = _designResolutionSize.width * _scaleX;
         float viewPortH = _designResolutionSize.height * _scaleY;
@@ -167,6 +170,7 @@ void GLView::updateDesignResolutionSize()
         auto director = Director::getInstance();
         director->_winSizeInPoints = getDesignResolutionSize();
         director->_isStatusLabelUpdated = true;
+        //更改归一化的矩阵
         director->setProjection(director->getProjection());
 
         // Github issue #16139
@@ -239,6 +243,7 @@ Size GLView::getVisibleSize() const
 
 Vec2 GLView::getVisibleOrigin() const
 {
+    //NO_BORDER会超出屏幕比如(480,920)->(480,853.76),那么y需要从33.多开始
     if (_resolutionPolicy == ResolutionPolicy::NO_BORDER)
     {
         return Vec2((_designResolutionSize.width - _screenSize.width/_scaleX)/2, 
