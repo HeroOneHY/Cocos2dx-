@@ -25,6 +25,8 @@ _screenSize：实际屏幕尺寸；_designResolutionSize：预设的分辨率；
 
 Camera::initDefault()初始化一个透视矩阵，能归一化矩阵
 
+CCGLProgram->setUniformsForBuiltins:为内置的shader程序赋值
+TrianglesCommand持有glProgramState可以使用shader，useMaterial()调用_glProgramState->apply()使用shader;
 
 
 
