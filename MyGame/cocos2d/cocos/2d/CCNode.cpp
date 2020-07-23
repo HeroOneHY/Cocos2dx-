@@ -1299,6 +1299,7 @@ void Node::visit(Renderer* renderer, const Mat4 &parentTransform, uint32_t paren
 
 Mat4 Node::transform(const Mat4& parentTransform)
 {
+//当父节点旋转时，子节点旋转，父节点缩放时，子节点缩放。其实里面的计算原理很简单，就是父节点矩阵乘以子节点矩阵得到最终矩阵。
     return parentTransform * this->getNodeToParentTransform();
 }
 
@@ -1701,6 +1702,7 @@ AffineTransform Node::getNodeToParentAffineTransform(Node* ancestor) const
 
     return t;
 }
+//可以转换子UI的坐标到父UI的坐标
 const Mat4& Node::getNodeToParentTransform() const
 {
     if (_transformDirty)

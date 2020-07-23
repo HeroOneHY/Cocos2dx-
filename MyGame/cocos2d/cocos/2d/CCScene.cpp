@@ -191,7 +191,7 @@ static bool camera_cmp(const Camera* a, const Camera* b)
 
 const std::vector<Camera*>& Scene::getCameras()
 {
-    if (_cameraOrderDirty)
+    if (_cameraOrderDirty)//   //需要重新更新渲染顺序
     {
         stable_sort(_cameras.begin(), _cameras.end(), camera_cmp);
         _cameraOrderDirty = false;
@@ -208,7 +208,7 @@ void Scene::render(Renderer* renderer, const Mat4* eyeTransforms, const Mat4* ey
 {
     auto director = Director::getInstance();
     Camera* defaultCamera = nullptr;
-    const auto& transform = getNodeToParentTransform();
+    const auto& transform = getNodeToParentTransform(); //把子元素的坐标转化到父空间
 
     for (const auto& camera : getCameras())
     {
@@ -233,11 +233,11 @@ void Scene::render(Renderer* renderer, const Mat4* eyeTransforms, const Mat4* ey
                 camera->setAdditionalProjection(eyeProjections[i] * camera->getProjectionMatrix().getInversed());
             if (eyeTransforms)
                 camera->setAdditionalTransform(eyeTransforms[i].getInversed());
-            director->pushProjectionMatrix(i);
-            director->loadProjectionMatrix(Camera::_visitingCamera->getViewProjectionMatrix(), i);
+            director->pushProjectionMatrix(i); //绘制前push投影矩阵
+            director->loadProjectionMatrix(Camera::_visitingCamera->getViewProjectionMatrix(), i); //初始化栈顶矩阵
         }
 
-        camera->apply();
+        camera->apply(); //填充默认的相机矩阵，把屏幕坐标转化为归一化坐标
         //clear background with max depth
         camera->clearBackground();
         //visit the scene
@@ -253,7 +253,7 @@ void Scene::render(Renderer* renderer, const Mat4* eyeTransforms, const Mat4* ey
         camera->restore();
 
         for (unsigned int i = 0; i < multiViewCount; ++i)
-            director->popProjectionMatrix(i);
+            director->popProjectionMatrix(i); //绘制后pop投影矩阵
 
         // we shouldn't restore the transform matrix since it could be used
         // from "update" or other parts of the game to calculate culling or something else.

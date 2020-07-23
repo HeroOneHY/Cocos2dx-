@@ -282,7 +282,7 @@ void Director::drawScene()
 
     pushMatrix(MATRIX_STACK_TYPE::MATRIX_STACK_MODELVIEW);
     
-    if (_runningScene)
+    if (_runningScene) //如果有正在运行的scene就遍历渲染scene
     {
 #if (CC_USE_PHYSICS || (CC_USE_3D_PHYSICS && CC_ENABLE_BULLET_INTEGRATION) || CC_USE_NAVMESH)
         _runningScene->stepPhysicsAndNavigation(_deltaTime);
@@ -862,7 +862,7 @@ void Director::replaceScene(Scene *scene)
     CCASSERT(scene != nullptr, "the scene should not be null");
     
     if (_runningScene == nullptr) {
-        runWithScene(scene);
+        runWithScene(scene); //如果没有运行的scene直接scene入栈运行
         return;
     }
     
@@ -875,7 +875,7 @@ void Director::replaceScene(Scene *scene)
         {
             _nextScene->onExit();
         }
-        _nextScene->cleanup();
+        _nextScene->cleanup(); //清除actions和schs
         _nextScene = nullptr;
     }
 
@@ -1160,7 +1160,7 @@ void Director::restartDirector()
 void Director::setNextScene()
 {
     _eventDispatcher->dispatchEvent(_beforeSetNextScene);
-
+//dynamic_cast将基类转化为子类
     bool runningIsTransition = dynamic_cast<TransitionScene*>(_runningScene) != nullptr;
     bool newIsTransition = dynamic_cast<TransitionScene*>(_nextScene) != nullptr;
 

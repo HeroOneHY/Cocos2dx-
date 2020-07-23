@@ -18,6 +18,8 @@ renderer->CCRenderer.h:Renderer::Renderer()： _commandGroupStack.push(DEFAULT_R
 
 Sprite：精灵类，使用的shader为renderer->shaders->ccShader_PositionTextureColor_noMVP.vert、frag，CC_PMatrix在Director::setProjection(Projection projection)初始化
 
+base/CCDirector.h->Director->_scenesStack：维护了一个scene栈；runWithScene：入栈，设为_nextScene，setNextScene：如果有_nextScene就销毁_runningScene，使_nextScene成为_runningScene，并使_nextScene为nil；drawScene：遍历_runningScene并绘制
+
 坐标系统和屏幕适配，怎么把gl坐标系和UI坐标系关联：CC_PMatrix投影使坐标归一化？
 
 _screenSize：实际屏幕尺寸；_designResolutionSize：预设的分辨率；_scaleX、_scaleY：_designResolutionSize的缩放比例，使能保持_designResolutionSize的比例，又能充满屏幕；_designResolutionSize.width * _scaleX，_designResolutionSize.height * _scaleY：用来设置viewport，注意viewport可以从负坐标开始
@@ -25,8 +27,12 @@ _screenSize：实际屏幕尺寸；_designResolutionSize：预设的分辨率；
 
 Camera::initDefault()初始化一个透视矩阵，能归一化矩阵
 
-CCGLProgram->setUniformsForBuiltins:为内置的shader程序赋值
+CCGLProgram->setUniformsForBuiltins:为内置的shader程序赋值；setUniformsForBuiltins->(_director->getMatrix)->setUniformLocationWithMatrix4fv为cccamera赋值
 TrianglesCommand持有glProgramState可以使用shader，useMaterial()调用_glProgramState->apply()使用shader;
+
+相机和矩阵和node树形结构的关系？
+
+Scene::onEnter()->child->onEnter()->Camera::onEnter()->Camera::onEnter()->setScene(scene):camera把自己传给scene并入栈
 
 
 
