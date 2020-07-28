@@ -34,6 +34,23 @@ TrianglesCommand持有glProgramState可以使用shader，useMaterial()调用_glP
 
 Scene::onEnter()->child->onEnter()->Camera::onEnter()->Camera::onEnter()->setScene(scene):camera把自己传给scene并入栈
 
+Director维护了一个投影矩阵栈列表std::vector< std::stack<Mat4> > _projectionMatrixStackList，
+ for (unsigned int i = 0; i < multiViewCount; ++i) {
+            if (eyeProjections)
+                camera->setAdditionalProjection(eyeProjections[i] * camera->getProjectionMatrix().getInversed());
+            if (eyeTransforms)
+                camera->setAdditionalTransform(eyeTransforms[i].getInversed());
+            director->pushProjectionMatrix(i); //绘制前push投影矩阵
+            director->loadProjectionMatrix(Camera::_visitingCamera->getViewProjectionMatrix(), i); //初始化栈顶矩阵
+}，遍历multiViewCount，每个view代表一个一个矩阵栈，每个矩阵栈的栈底从Camera::_visitingCamera->getViewProjectionMatrix获取，绘制结束后 director->popProjectionMatrix(i);每个栈会pop一下
+
+void Node::visit(Renderer* renderer, const Mat4 &parentTransform, uint32_t parentFlags){
+
+	//_modelViewMatrixStack栈底是属于director，子node每次visit开始push一个modelview矩阵，结束再pop回来
+	 _director->pushMatrix(MATRIX_STACK_TYPE::MATRIX_STACK_MODELVIEW);
+          _director->popMatrix(MATRIX_STACK_TYPE::MATRIX_STACK_MODELVIEW);
+}
+
 
 
 

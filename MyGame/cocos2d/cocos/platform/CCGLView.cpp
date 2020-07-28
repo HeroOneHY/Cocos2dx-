@@ -48,14 +48,15 @@ namespace {
     {
         int i;
         int temp = g_indexBitsUsed;
-        
+        //&或者|是位运算，&&和||是逻辑运算,temp & 0x00000001，temp为偶数返回0，奇数返回1
+        //如果temp为偶数，进一位返回
         for (i = 0; i < EventTouch::MAX_TOUCHES; i++) {
-            if (! (temp & 0x00000001)) {
+            if (! (temp & 0x00000001)) { //如果temp为偶数，进行下面的
                 g_indexBitsUsed |= (1 <<  i);
                 return i;
             }
             
-            temp >>= 1;
+            temp >>= 1; //右移
         }
         
         // all bits are used
@@ -306,13 +307,13 @@ void GLView::handleTouchesBegin(int num, intptr_t ids[], float xs[], float ys[])
     int unusedIndex = 0;
     EventTouch touchEvent;
     
-    for (int i = 0; i < num; ++i)
+    for (int i = 0; i < num; ++i) //记录touch对象，防止重复map
     {
         id = ids[i];
         x = xs[i];
         y = ys[i];
 
-        auto iter = g_touchIdReorderMap.find(id);
+        auto iter = g_touchIdReorderMap.find(id); //map<intptr_t, int>
 
         // it is a new touch
         if (iter == g_touchIdReorderMap.end())

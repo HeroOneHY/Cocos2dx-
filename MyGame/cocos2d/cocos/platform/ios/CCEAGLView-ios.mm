@@ -413,7 +413,7 @@ Copyright (C) 2008 Apple Inc. All Rights Reserved.
     float ys[IOS_MAX_TOUCHES_COUNT] = {0.0f};
     
     int i = 0;
-    for (UITouch *touch in touches) {
+    for (UITouch *touch in touches) { //获取点的集合
         if (i >= IOS_MAX_TOUCHES_COUNT) {
             CCLOG("warning: touches more than 10, should adjust IOS_MAX_TOUCHES_COUNT");
             break;
@@ -450,8 +450,8 @@ Copyright (C) 2008 Apple Inc. All Rights Reserved.
 #if defined(__IPHONE_9_0) && (__IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_9_0)
         // running on iOS 9.0 or higher version
         if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0f) {
-            fs[i] = touch.force;
-            ms[i] = touch.maximumPossibleForce;
+            fs[i] = touch.force; //按压力度
+            ms[i] = touch.maximumPossibleForce; //最大力度
         }
 #endif
         ++i;

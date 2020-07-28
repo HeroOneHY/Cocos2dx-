@@ -751,7 +751,7 @@ static void GLToClipTransform(Mat4 *transformOut)
     auto modelview = director->getMatrix(MATRIX_STACK_TYPE::MATRIX_STACK_MODELVIEW);
     *transformOut = projection * modelview;
 }
-
+//屏幕坐标转化为gl坐标
 Vec2 Director::convertToGL(const Vec2& uiPoint)
 {
     Mat4 transform;
