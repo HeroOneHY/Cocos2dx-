@@ -36,9 +36,6 @@ THE SOFTWARE.
 #include "renderer/CCFrameBuffer.h"
 #include "platform/CCDataManager.h"
 
-#if CC_USE_PHYSICS
-#include "physics/CCPhysicsWorld.h"
-#endif
 
 
 
@@ -281,9 +278,7 @@ Scene* Scene::createWithPhysics()
 
 bool Scene::initWithPhysics()
 {
-#if CC_USE_PHYSICS
-    _physicsWorld = PhysicsWorld::construct(this);
-#endif
+
 
     bool ret = false;
     do
@@ -292,9 +287,6 @@ bool Scene::initWithPhysics()
         CC_BREAK_IF( ! (director = Director::getInstance()) );
 
         this->setContentSize(director->getWinSize());
-
-
-
         // success
         ret = true;
     } while (0);
@@ -303,16 +295,5 @@ bool Scene::initWithPhysics()
 
 #endif
 
-#if (CC_USE_PHYSICS || (CC_USE_3D_PHYSICS && CC_ENABLE_BULLET_INTEGRATION) || CC_USE_NAVMESH)
-void Scene::stepPhysicsAndNavigation(float deltaTime)
-{
-#if CC_USE_PHYSICS
-    if (_physicsWorld && _physicsWorld->isAutoStep())
-        _physicsWorld->update(deltaTime);
-#endif
-
-
-}
-#endif
 
 NS_CC_END
