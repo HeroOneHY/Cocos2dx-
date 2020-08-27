@@ -315,7 +315,7 @@ THE SOFTWARE.
  */
 #ifndef CC_USE_WEBP
 #if (CC_TARGET_PLATFORM != CC_PLATFORM_WINRT)
-#define CC_USE_WEBP  1
+#define CC_USE_WEBP  0
 #endif
 #endif // CC_USE_WEBP
 
