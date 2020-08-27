@@ -32,7 +32,7 @@
 
 #include "base/CCEventDispatcher.h"
 #include "platform/CCFileUtils.h"
-#include "network/CCDownloader.h"
+
 
 #include "CCEventAssetsManagerEx.h"
 
@@ -187,7 +187,7 @@ protected:
      * @js NA
      * @lua NA
      */
-    virtual void onError(const network::DownloadTask& task,
+    virtual void onError(
                          int errorCode,
                          int errorCodeInternal,
                          const std::string& errorStr);
@@ -232,7 +232,7 @@ private:
     State _updateState;
     
     //! Downloader
-    std::shared_ptr<network::Downloader> _downloader;
+   
     
     //! The reference to the local assets
     const std::unordered_map<std::string, Manifest::Asset> *_assets;

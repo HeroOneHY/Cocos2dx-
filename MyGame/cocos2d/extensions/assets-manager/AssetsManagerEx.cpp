@@ -84,25 +84,6 @@ AssetsManagerEx::AssetsManagerEx(const std::string& manifestUrl, const std::stri
     _eventName = EventListenerAssetsManagerEx::LISTENER_ID + pointer;
     _fileUtils = FileUtils::getInstance();
 
-    network::DownloaderHints hints =
-    {
-        static_cast<uint32_t>(_maxConcurrentTask),
-        DEFAULT_CONNECTION_TIMEOUT,
-        ".tmp"
-    };
-    _downloader = std::shared_ptr<network::Downloader>(new network::Downloader(hints));
-    _downloader->onTaskError = std::bind(&AssetsManagerEx::onError, this, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3, std::placeholders::_4);
-    _downloader->onTaskProgress = [this](const network::DownloadTask& task,
-                                         int64_t /*bytesReceived*/,
-                                         int64_t totalBytesReceived,
-                                         int64_t totalBytesExpected)
-    {
-        this->onProgress(totalBytesExpected, totalBytesReceived, task.requestURL, task.identifier);
-    };
-    _downloader->onFileTaskSuccess = [this](const network::DownloadTask& task)
-    {
-        this->onSuccess(task.requestURL, task.storagePath, task.identifier);
-    };
     setStoragePath(storagePath);
     _tempVersionPath = _tempStoragePath + VERSION_FILENAME;
     _cacheManifestPath = _storagePath + MANIFEST_FILENAME;
@@ -113,9 +94,7 @@ AssetsManagerEx::AssetsManagerEx(const std::string& manifestUrl, const std::stri
 
 AssetsManagerEx::~AssetsManagerEx()
 {
-    _downloader->onTaskError = (nullptr);
-    _downloader->onFileTaskSuccess = (nullptr);
-    _downloader->onTaskProgress = (nullptr);
+  
     CC_SAFE_RELEASE(_localManifest);
     // _tempManifest could share a ptr with _remoteManifest or _localManifest
     if (_tempManifest != _localManifest && _tempManifest != _remoteManifest)
@@ -552,7 +531,7 @@ void AssetsManagerEx::downloadVersion()
     {
         _updateState = State::DOWNLOADING_VERSION;
         // Download version file asynchronously
-        _downloader->createDownloadFileTask(versionUrl, _tempVersionPath, VERSION_ID);
+       
     }
     // No version file found
     else
@@ -620,7 +599,7 @@ void AssetsManagerEx::downloadManifest()
     {
         _updateState = State::DOWNLOADING_MANIFEST;
         // Download version file asynchronously
-        _downloader->createDownloadFileTask(manifestUrl, _tempManifestPath, MANIFEST_ID);
+      
     }
     // No manifest file found
     else
@@ -1000,27 +979,12 @@ void AssetsManagerEx::fileSuccess(const std::string &customId, const std::string
     queueDowload();
 }
 
-void AssetsManagerEx::onError(const network::DownloadTask& task,
+void AssetsManagerEx::onError(
                               int errorCode,
                               int errorCodeInternal,
                               const std::string& errorStr)
 {
-    // Skip version error occurred
-    if (task.identifier == VERSION_ID)
-    {
-        CCLOG("AssetsManagerEx : Fail to download version file, step skipped\n");
-        _updateState = State::PREDOWNLOAD_MANIFEST;
-        downloadManifest();
-    }
-    else if (task.identifier == MANIFEST_ID)
-    {
-        dispatchUpdateEvent(EventAssetsManagerEx::EventCode::ERROR_DOWNLOAD_MANIFEST, task.identifier, errorStr, errorCode, errorCodeInternal);
-        _updateState = State::FAIL_TO_UPDATE;
-    }
-    else
-    {
-        fileError(task.identifier, errorStr, errorCode, errorCodeInternal);
-    }
+
 }
 
 void AssetsManagerEx::onProgress(double total, double downloaded, const std::string& /*url*/, const std::string &customId)
@@ -1169,8 +1133,7 @@ void AssetsManagerEx::queueDowload()
         _currConcurrentTask++;
         DownloadUnit& unit = _downloadUnits[key];
         _fileUtils->createDirectory(basename(unit.storagePath));
-        _downloader->createDownloadFileTask(unit.srcUrl, unit.storagePath, unit.customId);
-        
+      
         _tempManifest->setAssetDownloadState(key, Manifest::DownloadState::DOWNLOADING);
     }
     if (_percentByFile / 100 > _nextSavePoint)
