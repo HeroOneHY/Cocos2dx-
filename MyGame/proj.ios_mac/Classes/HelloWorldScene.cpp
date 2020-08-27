@@ -24,8 +24,6 @@
 
 #include "HelloWorldScene.h"
 #include "SimpleAudioEngine.h"
-#include "editor-support/cocostudio/ActionTimeline/CSLoader.h"
-#include "editor-support/cocostudio/ActionTimeline/CCActionTimeline.h"
 USING_NS_CC;
 
 Scene* HelloWorld::createScene()
