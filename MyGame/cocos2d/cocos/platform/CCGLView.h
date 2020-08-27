@@ -467,8 +467,6 @@ protected:
     float _scaleY;
     ResolutionPolicy _resolutionPolicy;
 
-    // VR stuff
-    VRIRenderer* _vrImpl;
 };
 
 // end of platform group

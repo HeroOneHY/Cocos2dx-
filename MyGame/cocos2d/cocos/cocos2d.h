@@ -285,8 +285,6 @@ THE SOFTWARE.
 #include "3d/CCSprite3DMaterial.h"
 #include "3d/CCTerrain.h"
 
-// vr
-#include "vr/CCVRGenericRenderer.h"
 
 
 // Deprecated
