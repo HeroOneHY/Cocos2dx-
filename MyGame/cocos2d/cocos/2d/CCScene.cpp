@@ -45,10 +45,6 @@ THE SOFTWARE.
 #include "physics3d/CCPhysics3DComponent.h"
 #endif
 
-#if CC_USE_NAVMESH
-#include "navmesh/CCNavMesh.h"
-#endif
-
 NS_CC_BEGIN
 
 Scene::Scene()
@@ -98,9 +94,7 @@ Scene::~Scene()
     CC_SAFE_RELEASE(_physics3DWorld);
     CC_SAFE_RELEASE(_physics3dDebugCamera);
 #endif
-#if CC_USE_NAVMESH
-    CC_SAFE_RELEASE(_navMesh);
-#endif
+
     Director::getInstance()->getEventDispatcher()->removeEventListener(_event);
     CC_SAFE_RELEASE(_event);
     
@@ -117,17 +111,7 @@ Scene::~Scene()
 #endif // CC_ENABLE_GC_FOR_NATIVE_OBJECTS
 }
 
-#if CC_USE_NAVMESH
-void Scene::setNavMesh(NavMesh* navMesh)
-{
-    if (_navMesh != navMesh)
-    {
-        CC_SAFE_RETAIN(navMesh);
-        CC_SAFE_RELEASE(_navMesh);
-        _navMesh = navMesh;
-    }
-}
-#endif
+
 
 bool Scene::init()
 {
@@ -242,12 +226,7 @@ void Scene::render(Renderer* renderer, const Mat4* eyeTransforms, const Mat4* ey
         camera->clearBackground();
         //visit the scene
         visit(renderer, transform, 0);
-#if CC_USE_NAVMESH
-        if (_navMesh && _navMeshDebugCamera == camera)
-        {
-            _navMesh->debugDraw(renderer);
-        }
-#endif
+
 
         renderer->render();
         camera->restore();
@@ -383,12 +362,7 @@ void Scene::stepPhysicsAndNavigation(float deltaTime)
         _physics3DWorld->stepSimulate(deltaTime);
     }
 #endif
-#if CC_USE_NAVMESH
-    if (_navMesh)
-    {
-        _navMesh->update(deltaTime);
-    }
-#endif
+
 }
 #endif
 

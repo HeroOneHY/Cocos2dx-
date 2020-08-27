@@ -29,7 +29,6 @@
 #include "base/CCDirector.h"
 #include "base/CCScheduler.h"
 #include "base/CCUserDefault.h"
-#include "network/CCDownloader.h"
 #include "platform/CCFileUtils.h"
 
 #ifdef MINIZIP_FROM_SYSTEM
@@ -58,103 +57,14 @@ AssetsManager::AssetsManager(const char* packageUrl/* =nullptr */, const char* v
 , _packageUrl(packageUrl ? packageUrl : "")
 , _versionFileUrl(versionFileUrl ? versionFileUrl : "")
 , _downloadedVersion("")
-, _downloader(new Downloader())
 , _connectionTimeout(0)
 , _delegate(nullptr)
 , _isDownloading(false)
 , _shouldDeleteDelegateWhenExit(false)
 {
     checkStoragePath();
-    // convert downloader error code to AssetsManager::ErrorCode
-    _downloader->onTaskError = [this](const DownloadTask& /*task*/,
-                                      int errorCode,
-                                      int /*errorCodeInternal*/,
-                                      const std::string& /*errorStr*/)
-    {
-        _isDownloading = false;
-        
-        if (nullptr == _delegate)
-        {
-            return;
-        }
-        auto err = (DownloadTask::ERROR_FILE_OP_FAILED == errorCode) ? ErrorCode::CREATE_FILE : ErrorCode::NETWORK;
-        _delegate->onError(err);
-    };
-    
-    // progress callback
-    _downloader->onTaskProgress = [this](const DownloadTask& task,
-                                         int64_t /*bytesReceived*/,
-                                         int64_t totalBytesReceived,
-                                         int64_t totalBytesExpected)
-    {
-        if(FileUtils::getInstance()->getFileExtension(task.requestURL) != ".zip")
-        {
-            // get version progress don't report
-            return;
-        }
-        
-        if (nullptr == _delegate)
-        {
-            return;
-        }
-        
-        int percent = totalBytesExpected ? int(totalBytesReceived * 100 / totalBytesExpected) : 0;
-        _delegate->onProgress(percent);
-        CCLOG("downloading... %d%%", percent);
-    };
-    
-    // get version from version file when get data success
-    _downloader->onDataTaskSuccess = [this](const DownloadTask& /*task*/,
-                                            std::vector<unsigned char>& data)
-    {
-        // store version info to member _version
-        const char *p = (char *)data.data();
-        _version.insert(_version.end(), p, p + data.size());
-        
-        if (getVersion() == _version)
-        {
-            if (_delegate)
-            {
-                _delegate->onError(ErrorCode::NO_NEW_VERSION);
-            }
-            CCLOG("there is not new version");
-            // Set resource search path.
-            setSearchPath();
-            _isDownloading = false;
-            return;
-        }
-
-        // start download new version assets
-        // 1. Urls of package and version should be valid;
-        // 2. Package should be a zip file.
-        if (_versionFileUrl.empty()
-            || _packageUrl.empty()
-            || FileUtils::getInstance()->getFileExtension(_packageUrl) != ".zip"
-            )
-        {
-            CCLOG("no version file url, or no package url, or the package is not a zip file");
-            _isDownloading = false;
-            return;
-        }
-        
-        // Is package already downloaded?
-        _downloadedVersion = UserDefault::getInstance()->getStringForKey(keyOfDownloadedVersion().c_str());
-        if (_downloadedVersion == _version)
-        {
-            downloadAndUncompress();
-            return;
-        }
-        
-        // start download;
-        const string outFileName = _storagePath + TEMP_PACKAGE_FILE_NAME;
-        _downloader->createDownloadFileTask(_packageUrl, outFileName);
-    };
-    
-    // after download package, do uncompress operation
-    _downloader->onFileTaskSuccess = [this](const DownloadTask& /*task*/)
-    {
-        downloadAndUncompress();
-    };
+ 
+   
 }
 
 AssetsManager::~AssetsManager()
@@ -194,16 +104,6 @@ std::string AssetsManager::keyOfDownloadedVersion() const
     return keyWithHash(KEY_OF_DOWNLOADED_VERSION,_packageUrl);
 }
 
-bool AssetsManager::checkUpdate()
-{
-    if (_versionFileUrl.size() == 0 || _isDownloading) return false;
-    
-    // Clear _version before assign new value.
-    _version.clear();
-    _isDownloading = true;
-    _downloader->createDownloadDataTask(_versionFileUrl);
-    return true;
-}
 
 void AssetsManager::downloadAndUncompress()
 {
