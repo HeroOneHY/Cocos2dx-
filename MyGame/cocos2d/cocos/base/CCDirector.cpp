@@ -284,9 +284,7 @@ void Director::drawScene()
     
     if (_runningScene)
     {
-#if (CC_USE_PHYSICS || (CC_USE_3D_PHYSICS && CC_ENABLE_BULLET_INTEGRATION) || CC_USE_NAVMESH)
-        _runningScene->stepPhysicsAndNavigation(_deltaTime);
-#endif
+
         //clear draw stats
         _renderer->clearDrawStats();
         

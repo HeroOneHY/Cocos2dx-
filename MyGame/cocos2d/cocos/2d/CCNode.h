@@ -40,9 +40,6 @@
 #include "2d/CCComponentContainer.h"
 #include "2d/CCComponent.h"
 
-#if CC_USE_PHYSICS
-#include "physics/CCPhysicsBody.h"
-#endif
 
 NS_CC_BEGIN
 
@@ -2021,24 +2018,6 @@ protected:
     std::function<void()> _onExitCallback;
     std::function<void()> _onEnterTransitionDidFinishCallback;
     std::function<void()> _onExitTransitionDidStartCallback;
-
-//Physics:remaining backwardly compatible  
-#if CC_USE_PHYSICS
-    PhysicsBody* _physicsBody;
-public:
-    void setPhysicsBody(PhysicsBody* physicsBody)
-    {
-        if (_physicsBody != nullptr)
-        {
-            removeComponent(_physicsBody);
-        }
-
-        addComponent(physicsBody);
-    }
-    PhysicsBody* getPhysicsBody() const { return _physicsBody; }
-
-    friend class PhysicsBody;
-#endif
 
     static int __attachedNodeCount;
     

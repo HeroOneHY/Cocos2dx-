@@ -116,9 +116,7 @@ Node::Node()
 , _onExitCallback(nullptr)
 , _onEnterTransitionDidFinishCallback(nullptr)
 , _onExitTransitionDidStartCallback(nullptr)
-#if CC_USE_PHYSICS
-, _physicsBody(nullptr)
-#endif
+
 {
     // set default scheduler and actionManager
     _director = Director::getInstance();
