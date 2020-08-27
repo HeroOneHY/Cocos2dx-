@@ -113,7 +113,7 @@ public:
     * @attention If this joint is already added to another physics world, it will be removed from that world first and then add to this world.
     * @param   joint   A pointer to an existing PhysicsJoint object.
     */
-    virtual void addJoint(PhysicsJoint* joint);
+    virtual void addJoint(PhysicsJoint* joint); /** 添加一个物理世界的关联.*/
 
     /**
     * Remove a joint from this physics world.
@@ -124,7 +124,7 @@ public:
     * @param   destroy   true this joint will be destroyed after remove from this world, false otherwise.
     */
     virtual void removeJoint(PhysicsJoint* joint, bool destroy = true);
-
+     /** 移除一个物理世界的关联.*/
     /**
     * Remove all joints from this physics world.
     * 
@@ -132,7 +132,7 @@ public:
     * @param   destroy   true all joints will be destroyed after remove from this world, false otherwise.
     */
     virtual void removeAllJoints(bool destroy = true);
-    
+    /** 移除所有物理世界的关联.*/
     /**
     * Remove a body from this physics world. 
     * 
@@ -237,14 +237,14 @@ public:
     * @return A Vec2 object.
     */
     Vec2 getGravity() const { return _gravity; }
-    
+     /** set 重力值 */
     /**
     * set the gravity value of this physics world.
     *
     * @param gravity A gravity value of this physics world.
     */
     void setGravity(const Vec2& gravity);
-    
+     /** get 重力值 */
     /**
      * Set the speed of this physics world.
      *
