@@ -40,10 +40,7 @@ THE SOFTWARE.
 #include "physics/CCPhysicsWorld.h"
 #endif
 
-#if CC_USE_3D_PHYSICS && CC_ENABLE_BULLET_INTEGRATION
-#include "physics3d/CCPhysics3DWorld.h"
-#include "physics3d/CCPhysics3DComponent.h"
-#endif
+
 
 
 NS_CC_BEGIN
@@ -88,10 +85,7 @@ void Scene::onEnter()
 
 Scene::~Scene()
 {
-#if CC_USE_3D_PHYSICS && CC_ENABLE_BULLET_INTEGRATION
-    CC_SAFE_RELEASE(_physics3DWorld);
-    CC_SAFE_RELEASE(_physics3dDebugCamera);
-#endif
+
 
     Director::getInstance()->getEventDispatcher()->removeEventListener(_event);
     CC_SAFE_RELEASE(_event);
@@ -237,32 +231,7 @@ void Scene::render(Renderer* renderer, const Mat4* eyeTransforms, const Mat4* ey
 //        camera->setNodeToParentTransform(eyeCopy);
     }
 
-#if CC_USE_3D_PHYSICS && CC_ENABLE_BULLET_INTEGRATION
-    if (_physics3DWorld && _physics3DWorld->isDebugDrawEnabled())
-    {
-        Camera *physics3dDebugCamera = _physics3dDebugCamera != nullptr ? _physics3dDebugCamera: defaultCamera;
-        
-        for (unsigned int i = 0; i < multiViewCount; ++i) {
-            if (eyeProjections)
-                physics3dDebugCamera->setAdditionalProjection(eyeProjections[i] * physics3dDebugCamera->getProjectionMatrix().getInversed());
-            if (eyeTransforms)
-                physics3dDebugCamera->setAdditionalTransform(eyeTransforms[i].getInversed());
-            director->pushProjectionMatrix(i);
-            director->loadProjectionMatrix(physics3dDebugCamera->getViewProjectionMatrix(), i);
-        }
-        
-        physics3dDebugCamera->apply();
-        physics3dDebugCamera->clearBackground();
 
-        _physics3DWorld->debugDraw(renderer);
-        renderer->render();
-        
-        physics3dDebugCamera->restore();
-
-        for (unsigned int i = 0; i < multiViewCount; ++i)
-            director->popProjectionMatrix(i);
-    }
-#endif
 
     Camera::_visitingCamera = nullptr;
 //    experimental::FrameBuffer::applyDefaultFBO();
@@ -324,11 +293,7 @@ bool Scene::initWithPhysics()
 
         this->setContentSize(director->getWinSize());
 
-#if CC_USE_3D_PHYSICS && CC_ENABLE_BULLET_INTEGRATION
-        Physics3DWorldDes info;
-        CC_BREAK_IF(! (_physics3DWorld = Physics3DWorld::create(&info)));
-        _physics3DWorld->retain();
-#endif
+
 
         // success
         ret = true;
@@ -346,12 +311,6 @@ void Scene::stepPhysicsAndNavigation(float deltaTime)
         _physicsWorld->update(deltaTime);
 #endif
 
-#if CC_USE_3D_PHYSICS && CC_ENABLE_BULLET_INTEGRATION
-    if (_physics3DWorld)
-    {
-        _physics3DWorld->stepSimulate(deltaTime);
-    }
-#endif
 
 }
 #endif
