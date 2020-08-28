@@ -35,7 +35,6 @@ THE SOFTWARE.
 
 #include "base/CCDirector.h"
 #include "platform/CCFileUtils.h"
-#include "platform/CCSAXParser.h"
 
 
 #define DECLARE_GUARD std::lock_guard<std::recursive_mutex> mutexGuard(_mutex)

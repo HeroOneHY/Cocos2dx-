@@ -31,10 +31,8 @@ THE SOFTWARE.
 #include "base/CCData.h"
 #include "base/ccMacros.h"
 #include "base/CCDirector.h"
-#include "platform/CCSAXParser.h"
 //#include "base/ccUtils.h"
 
-#include "tinyxml2/tinyxml2.h"
 #include <sys/stat.h>
 
 #define DECLARE_GUARD std::lock_guard<std::recursive_mutex> mutexGuard(_mutex)

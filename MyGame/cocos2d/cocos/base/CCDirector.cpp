@@ -1102,8 +1102,7 @@ void Director::reset()
     FileUtils::destroyInstance();
     AsyncTaskPool::destroyInstance();
     
-    // cocos2d-x specific data structures
-    UserDefault::destroyInstance();
+
     
     GL::invalidateStateCache();
 

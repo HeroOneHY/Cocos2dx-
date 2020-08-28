@@ -168,14 +168,7 @@ protected:
 #endif
     bool initWithJpgData(const unsigned char *  data, ssize_t dataLen);
     bool initWithPngData(const unsigned char * data, ssize_t dataLen);
-    bool initWithPVRData(const unsigned char * data, ssize_t dataLen);
-    bool initWithPVRv2Data(const unsigned char * data, ssize_t dataLen);
-    bool initWithPVRv3Data(const unsigned char * data, ssize_t dataLen);
-    bool initWithETCData(const unsigned char * data, ssize_t dataLen);
-    bool initWithS3TCData(const unsigned char * data, ssize_t dataLen);
-    bool initWithATITCData(const unsigned char *data, ssize_t dataLen);
-    typedef struct sImageTGA tImageTGA;
-    bool initWithTGAData(tImageTGA* tgaData);
+
 
     bool saveImageToPNG(const std::string& filePath, bool isToRGB = true);
     bool saveImageToJPG(const std::string& filePath);
@@ -223,10 +216,6 @@ protected:
     Format detectFormat(const unsigned char * data, ssize_t dataLen);
     bool isPng(const unsigned char * data, ssize_t dataLen);
     bool isJpg(const unsigned char * data, ssize_t dataLen);
-    bool isPvr(const unsigned char * data, ssize_t dataLen);
-    bool isEtc(const unsigned char * data, ssize_t dataLen);
-    bool isS3TC(const unsigned char * data,ssize_t dataLen);
-    bool isATITC(const unsigned char *data, ssize_t dataLen);
 };
 
 // end of platform group
