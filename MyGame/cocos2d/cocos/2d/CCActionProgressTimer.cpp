@@ -26,7 +26,6 @@ THE SOFTWARE.
 ****************************************************************************/
 #include "2d/CCActionProgressTimer.h"
 #include "2d/CCProgressTimer.h"
-#include "ui/UILoadingBar.h"
 
 NS_CC_BEGIN
 
@@ -73,22 +72,16 @@ void ProgressTo::startWithTarget(Node *target)
 {
     ActionInterval::startWithTarget(target);
 
-    ui::LoadingBar* loading_bar = dynamic_cast<ui::LoadingBar*>(target);
-    if (loading_bar){
-        _from = loading_bar->getPercent();
-    } else {
+  
         _from = static_cast<ProgressTimer*>(target)->getPercentage();
-    };
+    
 }
 
 void ProgressTo::update(float time)
 {
-    ui::LoadingBar* loading_bar = dynamic_cast<ui::LoadingBar*>(_target);
-    if (loading_bar){
-        loading_bar->setPercent(_from + (_to - _from) * time);
-    } else {
+  
         static_cast<ProgressTimer*>(_target)->setPercentage(_from + (_to - _from) * time);
-    };
+    
 }
 
 // implementation of ProgressFromTo
@@ -137,12 +130,9 @@ void ProgressFromTo::startWithTarget(Node *target)
 
 void ProgressFromTo::update(float time)
 {
-    ui::LoadingBar* loading_bar = dynamic_cast<ui::LoadingBar*>(_target);
-    if (loading_bar){
-        loading_bar->setPercent(_from + (_to - _from) * time);
-    } else {
+   
         static_cast<ProgressTimer*>(_target)->setPercentage(_from + (_to - _from) * time);
-    };
+    
 }
 
 NS_CC_END
