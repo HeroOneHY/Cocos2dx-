@@ -34,7 +34,6 @@
 #include "extensions/ExtensionExport.h"
 #include "platform/CCFileUtils.h"
 
-#include "json/document-wrapper.h"
 
 NS_CC_EXT_BEGIN
 
@@ -162,13 +161,9 @@ protected:
      */
     void prependSearchPaths();
     
-    void loadVersion(const rapidjson::Document &json);
-    
-    void loadManifest(const rapidjson::Document &json);
-    
     void saveToFile(const std::string &filepath);
     
-    Asset parseAsset(const std::string &path, const rapidjson::Value &json);
+
     
     void clear();
     
@@ -240,7 +235,6 @@ private:
     //! All search paths
     std::vector<std::string> _searchPaths;
     
-    rapidjson::Document _json;
 };
 
 NS_CC_EXT_END

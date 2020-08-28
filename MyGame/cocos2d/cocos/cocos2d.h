@@ -203,26 +203,10 @@ THE SOFTWARE.
 //Enhance modification end
 #endif // CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID
 
-#if (CC_TARGET_PLATFORM == CC_PLATFORM_WIN32)
-    #include "platform/win32/CCApplication-win32.h"
-    #include "platform/desktop/CCGLViewImpl-desktop.h"
-    #include "platform/win32/CCGL-win32.h"
-    #include "platform/win32/CCStdC-win32.h"
-#endif // CC_TARGET_PLATFORM == CC_PLATFORM_WIN32
 
-#if (CC_TARGET_PLATFORM == CC_PLATFORM_MAC)
-    #include "platform/desktop/CCGLViewImpl-desktop.h"
-    #include "platform/mac/CCApplication-mac.h"
-    #include "platform/mac/CCGL-mac.h"
-    #include "platform/mac/CCStdC-mac.h"
-#endif // CC_TARGET_PLATFORM == CC_PLATFORM_MAC
 
-#if (CC_TARGET_PLATFORM == CC_PLATFORM_LINUX)
-    #include "platform/linux/CCApplication-linux.h"
-    #include "platform/desktop/CCGLViewImpl-desktop.h"
-    #include "platform/linux/CCGL-linux.h"
-    #include "platform/linux/CCStdC-linux.h"
-#endif // CC_TARGET_PLATFORM == CC_PLATFORM_LINUX
+
+
 
 // script_support
 #include "base/CCScriptSupport.h"
@@ -236,8 +220,6 @@ THE SOFTWARE.
 #include "2d/CCSpriteFrame.h"
 #include "2d/CCSpriteFrameCache.h"
 
-// text_input_node
-#include "2d/CCTextFieldTTF.h"
 
 // textures
 #include "renderer/CCTextureAtlas.h"
