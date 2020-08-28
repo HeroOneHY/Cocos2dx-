@@ -1881,8 +1881,7 @@ protected:
 
     Scheduler *_scheduler;          ///< scheduler used to schedule timers and updates
 
-    ActionManager *_actionManager;  ///< a pointer to ActionManager singleton, which is used to handle all the actions
-
+   
     EventDispatcher* _eventDispatcher;  ///< event dispatcher used to dispatch all kinds of events
 
     bool _running;                  ///< is running
