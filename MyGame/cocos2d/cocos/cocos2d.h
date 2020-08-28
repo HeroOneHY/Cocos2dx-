@@ -262,7 +262,6 @@ THE SOFTWARE.
 #include "3d/CCMeshVertexIndexData.h"
 #include "3d/CCOBB.h"
 #include "3d/CCPlane.h"
-#include "3d/CCRay.h"
 
 
 
