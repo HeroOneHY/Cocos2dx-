@@ -285,16 +285,6 @@ public:
      */
     CC_DEPRECATED_ATTRIBUTE virtual unsigned char* getFileData(const std::string& filename, const char* mode, ssize_t *size) const;
 
-    /**
-     *  Gets resource file data from a zip file.
-     *
-     *  @param[in]  filename The resource file name which contains the relative path of the zip file.
-     *  @param[out] size If the file read operation succeeds, it will be the data size, otherwise 0.
-     *  @return Upon success, a pointer to the data is returned, otherwise nullptr.
-     *  @warning Recall: you are responsible for calling free() on any Non-nullptr pointer returned.
-     */
-    virtual unsigned char* getFileDataFromZip(const std::string& zipFilePath, const std::string& filename, ssize_t *size) const;
-
 
     /** Returns the fullpath for a given filename.
 
