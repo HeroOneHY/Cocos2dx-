@@ -30,9 +30,7 @@
 
 #include "3d/CCMeshVertexIndexData.h"
 #include "3d/CCObjLoader.h"
-#include "3d/CCSprite3DMaterial.h"
 #include "3d/CCMesh.h"
-#include "3d/CCBundle3D.h"
 
 #include "base/ccMacros.h"
 #include "base/CCEventCustom.h"
@@ -112,8 +110,7 @@ MeshVertexData* MeshVertexData::create(const MeshData& meshdata)
         MeshIndexData* indexdata = nullptr;
         if (needCalcAABB)
         {
-            auto aabb = Bundle3D::calculateAABB(meshdata.vertex, meshdata.getPerVertexSize(), index);
-            indexdata = MeshIndexData::create(id, vertexdata, indexBuffer, aabb);
+           
         }
         else
             indexdata = MeshIndexData::create(id, vertexdata, indexBuffer, meshdata.subMeshAABB[i]);

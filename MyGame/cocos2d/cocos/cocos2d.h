@@ -261,10 +261,7 @@ THE SOFTWARE.
 
 //3d
 #include "3d/CCAABB.h"
-#include "3d/CCAnimate3D.h"
-#include "3d/CCAnimation3D.h"
 #include "3d/CCAttachNode.h"
-#include "3d/CCBillBoard.h"
 #include "3d/CCFrustum.h"
 #include "3d/CCMesh.h"
 #include "3d/CCMeshSkin.h"
@@ -274,9 +271,6 @@ THE SOFTWARE.
 #include "3d/CCPlane.h"
 #include "3d/CCRay.h"
 #include "3d/CCSkeleton3D.h"
-#include "3d/CCSkybox.h"
-#include "3d/CCSprite3D.h"
-#include "3d/CCSprite3DMaterial.h"
 #include "3d/CCTerrain.h"
 
 
