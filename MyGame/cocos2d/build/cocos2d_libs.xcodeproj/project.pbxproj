@@ -687,12 +687,8 @@
 		1A570359180BD0B00088DEC7 /* unzip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A570352180BD0B00088DEC7 /* unzip.cpp */; };
 		1A57035A180BD0B00088DEC7 /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A570353180BD0B00088DEC7 /* unzip.h */; };
 		1A57035B180BD0B00088DEC7 /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A570353180BD0B00088DEC7 /* unzip.h */; };
-		1A570361180BD1080088DEC7 /* libpng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A570360180BD1080088DEC7 /* libpng.a */; };
 		1A570364180BD1120088DEC7 /* libpng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A570363180BD1120088DEC7 /* libpng.a */; };
 		1A570378180BD1B40088DEC7 /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A570377180BD1B40088DEC7 /* libjpeg.a */; };
-		1A57037B180BD1C90088DEC7 /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A57037A180BD1C90088DEC7 /* libjpeg.a */; };
-		1A5703A1180BD22C0088DEC7 /* libtiff.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A5703A0180BD22C0088DEC7 /* libtiff.a */; };
-		1A5703A4180BD2350088DEC7 /* libtiff.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A5703A3180BD2350088DEC7 /* libtiff.a */; };
 		1A57052B180BD31F0088DEC7 /* libfreetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A57052A180BD31F0088DEC7 /* libfreetype.a */; };
 		1A57052E180BD3280088DEC7 /* libfreetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A57052D180BD3280088DEC7 /* libfreetype.a */; };
 		1A5FB7C41DF012D900C918C1 /* AudioMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A5FB7C31DF012D900C918C1 /* AudioMacros.h */; };
@@ -860,11 +856,6 @@
 		468A14FB1EF223B700ECA675 /* util.h in Headers */ = {isa = PBXBuildFile; fileRef = 468A14DF1EF223B600ECA675 /* util.h */; };
 		468A14FC1EF223B700ECA675 /* util.h in Headers */ = {isa = PBXBuildFile; fileRef = 468A14DF1EF223B600ECA675 /* util.h */; };
 		468A14FD1EF223B700ECA675 /* util.h in Headers */ = {isa = PBXBuildFile; fileRef = 468A14DF1EF223B600ECA675 /* util.h */; };
-		468A19791EF3BA6500ECA675 /* libBulletCollision.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 468A19741EF3BA6500ECA675 /* libBulletCollision.a */; };
-		468A197A1EF3BA6500ECA675 /* libBulletDynamics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 468A19751EF3BA6500ECA675 /* libBulletDynamics.a */; };
-		468A197B1EF3BA6500ECA675 /* libBulletMultiThreaded.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 468A19761EF3BA6500ECA675 /* libBulletMultiThreaded.a */; };
-		468A197C1EF3BA6500ECA675 /* libLinearMath.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 468A19771EF3BA6500ECA675 /* libLinearMath.a */; };
-		468A197D1EF3BA6500ECA675 /* libMiniCL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 468A19781EF3BA6500ECA675 /* libMiniCL.a */; };
 		46BDE4A81FA32D3400104C05 /* libbox2d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46BDE4A71FA32D3400104C05 /* libbox2d.a */; };
 		46BDE4AA1FA3316A00104C05 /* libbox2d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46BDE4A91FA3316A00104C05 /* libbox2d.a */; };
 		46C02E0718E91123004B7456 /* xxhash.c in Sources */ = {isa = PBXBuildFile; fileRef = 46C02E0518E91123004B7456 /* xxhash.c */; };
@@ -1286,7 +1277,6 @@
 		507B3D091C31BDD30067B53E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1551A342158F2AB200E66CFE /* Foundation.framework */; };
 		507B3D0A1C31BDD30067B53E /* libpng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A570363180BD1120088DEC7 /* libpng.a */; };
 		507B3D0B1C31BDD30067B53E /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A570377180BD1B40088DEC7 /* libjpeg.a */; };
-		507B3D0C1C31BDD30067B53E /* libtiff.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A5703A3180BD2350088DEC7 /* libtiff.a */; };
 		507B3D0D1C31BDD30067B53E /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 292F1A5B1A5151CE00E479F8 /* libcrypto.a */; };
 		507B3D101C31BDD30067B53E /* libfreetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A57052D180BD3280088DEC7 /* libfreetype.a */; };
 		507B3D121C31BDD30067B53E /* CCStdC-ios.h in Headers */ = {isa = PBXBuildFile; fileRef = 503DD8DE1926736A00CD74DD /* CCStdC-ios.h */; };
@@ -2462,12 +2452,8 @@
 		1A570351180BD0B00088DEC7 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
 		1A570352180BD0B00088DEC7 /* unzip.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = unzip.cpp; sourceTree = "<group>"; };
 		1A570353180BD0B00088DEC7 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
-		1A570360180BD1080088DEC7 /* libpng.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpng.a; sourceTree = "<group>"; };
 		1A570363180BD1120088DEC7 /* libpng.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpng.a; sourceTree = "<group>"; };
 		1A570377180BD1B40088DEC7 /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjpeg.a; sourceTree = "<group>"; };
-		1A57037A180BD1C90088DEC7 /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjpeg.a; sourceTree = "<group>"; };
-		1A5703A0180BD22C0088DEC7 /* libtiff.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtiff.a; sourceTree = "<group>"; };
-		1A5703A3180BD2350088DEC7 /* libtiff.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtiff.a; sourceTree = "<group>"; };
 		1A57052A180BD31F0088DEC7 /* libfreetype.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfreetype.a; sourceTree = "<group>"; };
 		1A57052D180BD3280088DEC7 /* libfreetype.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfreetype.a; sourceTree = "<group>"; };
 		1A57FFF7180BC5160088DEC7 /* CHANGELOG */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 0; name = CHANGELOG; path = ../CHANGELOG; sourceTree = "<group>"; };
@@ -2630,11 +2616,6 @@
 		468A14DD1EF223B600ECA675 /* idl_parser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = idl_parser.cpp; sourceTree = "<group>"; };
 		468A14DE1EF223B600ECA675 /* idl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = idl.h; sourceTree = "<group>"; };
 		468A14DF1EF223B600ECA675 /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
-		468A19741EF3BA6500ECA675 /* libBulletCollision.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBulletCollision.a; path = ../external/bullet/prebuilt/mac/libBulletCollision.a; sourceTree = "<group>"; };
-		468A19751EF3BA6500ECA675 /* libBulletDynamics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBulletDynamics.a; path = ../external/bullet/prebuilt/mac/libBulletDynamics.a; sourceTree = "<group>"; };
-		468A19761EF3BA6500ECA675 /* libBulletMultiThreaded.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBulletMultiThreaded.a; path = ../external/bullet/prebuilt/mac/libBulletMultiThreaded.a; sourceTree = "<group>"; };
-		468A19771EF3BA6500ECA675 /* libLinearMath.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLinearMath.a; path = ../external/bullet/prebuilt/mac/libLinearMath.a; sourceTree = "<group>"; };
-		468A19781EF3BA6500ECA675 /* libMiniCL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMiniCL.a; path = ../external/bullet/prebuilt/mac/libMiniCL.a; sourceTree = "<group>"; };
 		46A15FCC1807A544005B8026 /* AUTHORS */ = {isa = PBXFileReference; lastKnownFileType = text; name = AUTHORS; path = ../AUTHORS; sourceTree = "<group>"; };
 		46A15FCE1807A544005B8026 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		46A15FE11807A56F005B8026 /* Export.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Export.h; sourceTree = "<group>"; };
@@ -3097,20 +3078,12 @@
 				ED682BBA213F5FC7001BF6CB /* libuv_a.a in Frameworks */,
 				46BDE4A81FA32D3400104C05 /* libbox2d.a in Frameworks */,
 				46270FA41E1CC6A200AAA098 /* libcrypto.a in Frameworks */,
-				468A197D1EF3BA6500ECA675 /* libMiniCL.a in Frameworks */,
 				46270FA51E1CC6A200AAA098 /* libssl.a in Frameworks */,
-				468A197C1EF3BA6500ECA675 /* libLinearMath.a in Frameworks */,
 				B21770471977ED34009EE11B /* QuartzCore.framework in Frameworks */,
 				B21770451977ED14009EE11B /* Cocoa.framework in Frameworks */,
 				B21770421977ECF8009EE11B /* ApplicationServices.framework in Frameworks */,
 				B21770401977ECE6009EE11B /* OpenGL.framework in Frameworks */,
 				B217703C1977ECB4009EE11B /* IOKit.framework in Frameworks */,
-				1A570361180BD1080088DEC7 /* libpng.a in Frameworks */,
-				1A57037B180BD1C90088DEC7 /* libjpeg.a in Frameworks */,
-				1A5703A1180BD22C0088DEC7 /* libtiff.a in Frameworks */,
-				468A197B1EF3BA6500ECA675 /* libBulletMultiThreaded.a in Frameworks */,
-				468A19791EF3BA6500ECA675 /* libBulletCollision.a in Frameworks */,
-				468A197A1EF3BA6500ECA675 /* libBulletDynamics.a in Frameworks */,
 				1A57052B180BD31F0088DEC7 /* libfreetype.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3125,7 +3098,6 @@
 				507B3D091C31BDD30067B53E /* Foundation.framework in Frameworks */,
 				507B3D0A1C31BDD30067B53E /* libpng.a in Frameworks */,
 				507B3D0B1C31BDD30067B53E /* libjpeg.a in Frameworks */,
-				507B3D0C1C31BDD30067B53E /* libtiff.a in Frameworks */,
 				507B3D0D1C31BDD30067B53E /* libcrypto.a in Frameworks */,
 				507B3D101C31BDD30067B53E /* libfreetype.a in Frameworks */,
 			);
@@ -3147,7 +3119,6 @@
 				A07A4CAF1783777C0073F6A7 /* Foundation.framework in Frameworks */,
 				1A570364180BD1120088DEC7 /* libpng.a in Frameworks */,
 				1A570378180BD1B40088DEC7 /* libjpeg.a in Frameworks */,
-				1A5703A4180BD2350088DEC7 /* libtiff.a in Frameworks */,
 				1A57052E180BD3280088DEC7 /* libfreetype.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3665,7 +3636,6 @@
 				1A40D0D91E8E4C76002E363A /* md5 */,
 				68B39B391B1C5C670084F72C /* clipper */,
 				B6DD2F731B04820C00E47F5F /* recast */,
-				B6CAB0021AF9A9EE00B9B856 /* bullet */,
 				15FB20781AE7C57D00C31518 /* poly2tri */,
 				382383E11A258FA7002C4610 /* flatbuffers */,
 				1AC026971914068200FA920D /* ConvertUTF */,
@@ -3676,7 +3646,6 @@
 				1A570373180BD1790088DEC7 /* jpeg */,
 				1AD71EF8180E28C400808F54 /* json */,
 				1A57035C180BD0D90088DEC7 /* png */,
-				1A57038A180BD1EF0088DEC7 /* tiff */,
 				BA6249A41E77D2850096291C /* tinydir */,
 				1A570348180BD09B0088DEC7 /* tinyxml2 */,
 				1A57034F180BD0B00088DEC7 /* unzip */,
@@ -3720,18 +3689,8 @@
 			isa = PBXGroup;
 			children = (
 				1A570362180BD1120088DEC7 /* ios */,
-				1A57035F180BD1080088DEC7 /* mac */,
 			);
 			name = prebuilt;
-			sourceTree = "<group>";
-		};
-		1A57035F180BD1080088DEC7 /* mac */ = {
-			isa = PBXGroup;
-			children = (
-				1A570360180BD1080088DEC7 /* libpng.a */,
-			);
-			name = mac;
-			path = ../external/png/prebuilt/mac;
 			sourceTree = "<group>";
 		};
 		1A570362180BD1120088DEC7 /* ios */ = {
@@ -3755,7 +3714,6 @@
 			isa = PBXGroup;
 			children = (
 				1A570376180BD1B40088DEC7 /* ios */,
-				1A570379180BD1C90088DEC7 /* mac */,
 			);
 			name = prebuilt;
 			sourceTree = "<group>";
@@ -3767,50 +3725,6 @@
 			);
 			name = ios;
 			path = ../external/jpeg/prebuilt/ios;
-			sourceTree = "<group>";
-		};
-		1A570379180BD1C90088DEC7 /* mac */ = {
-			isa = PBXGroup;
-			children = (
-				1A57037A180BD1C90088DEC7 /* libjpeg.a */,
-			);
-			name = mac;
-			path = ../external/jpeg/prebuilt/mac;
-			sourceTree = "<group>";
-		};
-		1A57038A180BD1EF0088DEC7 /* tiff */ = {
-			isa = PBXGroup;
-			children = (
-				1A57038C180BD2040088DEC7 /* prebuilt */,
-			);
-			name = tiff;
-			sourceTree = "<group>";
-		};
-		1A57038C180BD2040088DEC7 /* prebuilt */ = {
-			isa = PBXGroup;
-			children = (
-				1A5703A2180BD2350088DEC7 /* ios */,
-				1A57039F180BD22C0088DEC7 /* mac */,
-			);
-			name = prebuilt;
-			sourceTree = "<group>";
-		};
-		1A57039F180BD22C0088DEC7 /* mac */ = {
-			isa = PBXGroup;
-			children = (
-				1A5703A0180BD22C0088DEC7 /* libtiff.a */,
-			);
-			name = mac;
-			path = ../external/tiff/prebuilt/mac;
-			sourceTree = "<group>";
-		};
-		1A5703A2180BD2350088DEC7 /* ios */ = {
-			isa = PBXGroup;
-			children = (
-				1A5703A3180BD2350088DEC7 /* libtiff.a */,
-			);
-			name = ios;
-			path = ../external/tiff/prebuilt/ios;
 			sourceTree = "<group>";
 		};
 		1A5703BC180BD2940088DEC7 /* freetype2 */ = {
@@ -4151,18 +4065,6 @@
 			);
 			name = flatbuffers;
 			path = ../external/flatbuffers;
-			sourceTree = "<group>";
-		};
-		468A19731EF3BA3C00ECA675 /* mac */ = {
-			isa = PBXGroup;
-			children = (
-				468A19741EF3BA6500ECA675 /* libBulletCollision.a */,
-				468A19751EF3BA6500ECA675 /* libBulletDynamics.a */,
-				468A19761EF3BA6500ECA675 /* libBulletMultiThreaded.a */,
-				468A19771EF3BA6500ECA675 /* libLinearMath.a */,
-				468A19781EF3BA6500ECA675 /* libMiniCL.a */,
-			);
-			name = mac;
 			sourceTree = "<group>";
 		};
 		46A15FD01807A56F005B8026 /* audio */ = {
@@ -4628,14 +4530,6 @@
 			);
 			name = 3d;
 			path = ../cocos/3d;
-			sourceTree = "<group>";
-		};
-		B6CAB0021AF9A9EE00B9B856 /* bullet */ = {
-			isa = PBXGroup;
-			children = (
-				468A19731EF3BA3C00ECA675 /* mac */,
-			);
-			name = bullet;
 			sourceTree = "<group>";
 		};
 		B6DD2F731B04820C00E47F5F /* recast */ = {
