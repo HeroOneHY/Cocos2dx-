@@ -30,7 +30,6 @@
 
 #include "3d/CCMeshVertexIndexData.h"
 #include "3d/CCObjLoader.h"
-#include "3d/CCMesh.h"
 
 #include "base/ccMacros.h"
 #include "base/CCEventCustom.h"
