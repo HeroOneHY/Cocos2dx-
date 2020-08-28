@@ -94,21 +94,6 @@ THE SOFTWARE.
 #include "math/Vec3.h"
 #include "math/Vec4.h"
 
-// actions
-#include "2d/CCAction.h"
-#include "2d/CCActionCamera.h"
-#include "2d/CCActionCatmullRom.h"
-#include "2d/CCActionEase.h"
-#include "2d/CCActionGrid.h"
-#include "2d/CCActionGrid3D.h"
-#include "2d/CCActionInstant.h"
-#include "2d/CCActionInterval.h"
-#include "2d/CCActionManager.h"
-#include "2d/CCActionPageTurn3D.h"
-#include "2d/CCActionProgressTimer.h"
-#include "2d/CCActionTiledGrid.h"
-#include "2d/CCActionTween.h"
-#include "2d/CCTweenFunction.h"
 
 // 2d nodes
 #include "2d/CCAtlasNode.h"
@@ -133,9 +118,6 @@ THE SOFTWARE.
 #include "2d/CCProtectedNode.h"
 #include "2d/CCRenderTexture.h"
 #include "2d/CCScene.h"
-#include "2d/CCTransition.h"
-#include "2d/CCTransitionPageTurn.h"
-#include "2d/CCTransitionProgress.h"
 
 // 2d utils
 #include "2d/CCCamera.h"

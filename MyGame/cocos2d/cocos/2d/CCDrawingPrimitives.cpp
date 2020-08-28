@@ -42,7 +42,6 @@ THE SOFTWARE.
 #include <string.h>
 #include <cmath>
 
-#include "2d/CCActionCatmullRom.h"
 #include "base/CCDirector.h"
 #include "renderer/ccGLStateCache.h"
 #include "renderer/CCGLProgramCache.h"
@@ -337,52 +336,6 @@ void drawCatmullRom( PointArray *points, unsigned int segments )
     drawCardinalSpline( points, 0.5f, segments );
 }
 
-void drawCardinalSpline( PointArray *config, float tension,  unsigned int segments )
-{
-    lazy_init();
-
-    Vec2* vertices = new (std::nothrow) Vec2[segments + 1];
-
-    ssize_t p;
-    float lt;
-    float deltaT = 1.0f / config->count();
-
-    for( unsigned int i=0; i < segments+1;i++) {
-
-        float dt = (float)i / segments;
-
-        // border
-        if( dt == 1 ) {
-            p = config->count() - 1;
-            lt = 1;
-        } else {
-            p = dt / deltaT;
-            lt = (dt - deltaT * (float)p) / deltaT;
-        }
-
-        // Interpolate
-        Vec2 pp0 = config->getControlPointAtIndex(p-1);
-        Vec2 pp1 = config->getControlPointAtIndex(p+0);
-        Vec2 pp2 = config->getControlPointAtIndex(p+1);
-        Vec2 pp3 = config->getControlPointAtIndex(p+2);
-
-        Vec2 newPos = ccCardinalSplineAt( pp0, pp1, pp2, pp3, tension, lt);
-        vertices[i].x = newPos.x;
-        vertices[i].y = newPos.y;
-    }
-
-    s_shader->use();
-    s_shader->setUniformsForBuiltins();
-    s_shader->setUniformLocationWith4fv(s_colorLocation, (GLfloat*)&s_color.r, 1);
-
-    GL::enableVertexAttribs( GL::VERTEX_ATTRIB_FLAG_POSITION );
-
-    glVertexAttribPointer(GLProgram::VERTEX_ATTRIB_POSITION, 2, GL_FLOAT, GL_FALSE, 0, vertices);
-    glDrawArrays(GL_LINE_STRIP, 0, (GLsizei) segments + 1);
-
-    CC_SAFE_DELETE_ARRAY(vertices);
-    CC_INCREMENT_GL_DRAWN_BATCHES_AND_VERTICES(1,segments+1);
-}
 
 void drawCubicBezier(const Vec2& origin, const Vec2& control1, const Vec2& control2, const Vec2& destination, unsigned int segments)
 {

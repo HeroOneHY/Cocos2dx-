@@ -280,7 +280,7 @@ public:
     void scheduleUpdate(T *target, int priority, bool paused)
     {
         this->schedulePerFrame([target](float dt){
-            target->update(dt);
+           
         }, target, priority, paused);
     }
 

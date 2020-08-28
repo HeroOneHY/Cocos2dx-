@@ -36,11 +36,9 @@ THE SOFTWARE.
 #include "2d/CCSpriteFrameCache.h"
 #include "platform/CCFileUtils.h"
 
-#include "2d/CCActionManager.h"
 #include "2d/CCFontFNT.h"
 #include "2d/CCFontAtlasCache.h"
 #include "2d/CCAnimationCache.h"
-#include "2d/CCTransition.h"
 #include "2d/CCFontFreeType.h"
 #include "2d/CCLabelAtlas.h"
 #include "renderer/CCGLProgramCache.h"
@@ -128,7 +126,6 @@ bool Director::init()
     // scheduler
     _scheduler = new (std::nothrow) Scheduler();
     // action manager
-    _actionManager = new (std::nothrow) ActionManager();
     _scheduler->scheduleUpdate(_actionManager, Scheduler::PRIORITY_SYSTEM, false);
 
     _eventDispatcher = new (std::nothrow) EventDispatcher();
@@ -171,7 +168,6 @@ Director::~Director()
     CC_SAFE_RELEASE(_runningScene);
     CC_SAFE_RELEASE(_notificationNode);
     CC_SAFE_RELEASE(_scheduler);
-    CC_SAFE_RELEASE(_actionManager);
 
     CC_SAFE_RELEASE(_beforeSetNextScene);
     CC_SAFE_RELEASE(_afterSetNextScene);
@@ -1158,8 +1154,8 @@ void Director::setNextScene()
 {
     _eventDispatcher->dispatchEvent(_beforeSetNextScene);
 
-    bool runningIsTransition = dynamic_cast<TransitionScene*>(_runningScene) != nullptr;
-    bool newIsTransition = dynamic_cast<TransitionScene*>(_nextScene) != nullptr;
+    bool runningIsTransition = nullptr;
+    bool newIsTransition = nullptr;
 
     // If it is not a transition, call onExit/cleanup
      if (! newIsTransition)
@@ -1419,16 +1415,6 @@ void Director::setScheduler(Scheduler* scheduler)
         CC_SAFE_RELEASE(_scheduler);
         _scheduler = scheduler;
     }
-}
-
-void Director::setActionManager(ActionManager* actionManager)
-{
-    if (_actionManager != actionManager)
-    {
-        CC_SAFE_RETAIN(actionManager);
-        CC_SAFE_RELEASE(_actionManager);
-        _actionManager = actionManager;
-    }    
 }
 
 void Director::setEventDispatcher(EventDispatcher* dispatcher)

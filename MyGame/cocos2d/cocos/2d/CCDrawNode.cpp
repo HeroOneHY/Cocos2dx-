@@ -32,7 +32,6 @@
 #include "base/CCDirector.h"
 #include "base/CCEventListenerCustom.h"
 #include "base/CCEventDispatcher.h"
-#include "2d/CCActionCatmullRom.h"
 #include "platform/CCGL.h"
 
 NS_CC_BEGIN
@@ -605,44 +604,6 @@ void DrawNode::drawCubicBezier(const Vec2 &origin, const Vec2 &control1, const V
     CC_SAFE_DELETE_ARRAY(vertices);
 }
 
-void DrawNode::drawCardinalSpline(PointArray *config, float tension,  unsigned int segments, const Color4F &color)
-{
-    Vec2* vertices = new (std::nothrow) Vec2[segments + 1];
-    if( ! vertices )
-        return;
-    
-    ssize_t p;
-    float lt;
-    float deltaT = 1.0f / config->count();
-    
-    for( unsigned int i=0; i < segments+1;i++) {
-        
-        float dt = (float)i / segments;
-        
-        // border
-        if( dt == 1 ) {
-            p = config->count() - 1;
-            lt = 1;
-        } else {
-            p = dt / deltaT;
-            lt = (dt - deltaT * (float)p) / deltaT;
-        }
-        
-        // Interpolate
-        Vec2 pp0 = config->getControlPointAtIndex(p-1);
-        Vec2 pp1 = config->getControlPointAtIndex(p+0);
-        Vec2 pp2 = config->getControlPointAtIndex(p+1);
-        Vec2 pp3 = config->getControlPointAtIndex(p+2);
-        
-        Vec2 newPos = ccCardinalSplineAt( pp0, pp1, pp2, pp3, tension, lt);
-        vertices[i].x = newPos.x;
-        vertices[i].y = newPos.y;
-    }
-    
-    drawPoly(vertices, segments+1, false, color);
-    
-    CC_SAFE_DELETE_ARRAY(vertices);
-}
 
 void DrawNode::drawCatmullRom(PointArray *points, unsigned int segments, const Color4F &color)
 {
