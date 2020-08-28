@@ -33,7 +33,6 @@
 #include "base/CCEventController.h"
 #include "base/CCEventListenerController.h"
 #include "base/CCDirector.h"
-#include "2d/CCLabel.h"
 
 #import <GameController/GameController.h>
 
