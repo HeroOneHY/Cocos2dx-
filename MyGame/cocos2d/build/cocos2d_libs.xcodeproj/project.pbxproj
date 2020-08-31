@@ -595,11 +595,9 @@
 		507B3CFE1C31BDD30067B53E /* CCEventMouse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50ABBDEE1925AB6E00A911A9 /* CCEventMouse.cpp */; };
 		507B3D001C31BDD30067B53E /* CCProtectedNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15EFA20F198A2BB5000C57D3 /* CCProtectedNode.cpp */; };
 		507B3D011C31BDD30067B53E /* CCGLProgramStateCache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50ABBD6E1925AB4100A911A9 /* CCGLProgramStateCache.cpp */; };
-		507B3D081C31BDD30067B53E /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 292F1A5C1A5151CE00E479F8 /* libssl.a */; };
 		507B3D091C31BDD30067B53E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1551A342158F2AB200E66CFE /* Foundation.framework */; };
 		507B3D0A1C31BDD30067B53E /* libpng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A570363180BD1120088DEC7 /* libpng.a */; };
 		507B3D0B1C31BDD30067B53E /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A570377180BD1B40088DEC7 /* libjpeg.a */; };
-		507B3D0D1C31BDD30067B53E /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 292F1A5B1A5151CE00E479F8 /* libcrypto.a */; };
 		507B3D121C31BDD30067B53E /* CCStdC-ios.h in Headers */ = {isa = PBXBuildFile; fileRef = 503DD8DE1926736A00CD74DD /* CCStdC-ios.h */; };
 		507B3D1C1C31BDD30067B53E /* CCCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EACC99D19F5014D00EB3C5E /* CCCamera.h */; };
 		507B3D211C31BDD30067B53E /* CCGroupCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 50ABBD731925AB4100A911A9 /* CCGroupCommand.h */; };
@@ -1439,19 +1437,13 @@
 		1A9DCA03180E6955007A3AD4 /* CCGLBufferedNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCGLBufferedNode.h; sourceTree = "<group>"; };
 		1AAF5351180E3060000584C8 /* AssetsManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AssetsManager.cpp; sourceTree = "<group>"; };
 		1AAF5352180E3060000584C8 /* AssetsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetsManager.h; sourceTree = "<group>"; };
-		1AAF541C180E3B6A000584C8 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcurl.a; sourceTree = "<group>"; };
 		1AC026991914068200FA920D /* ConvertUTF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConvertUTF.h; sourceTree = "<group>"; };
 		2905E9CC1ACD3D8C00092DD2 /* libz.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libz.a; path = ../external/zlib/prebuilt/mac/libz.a; sourceTree = "<group>"; };
 		291901411B05895600F8B4BA /* CCNinePatchImageParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCNinePatchImageParser.h; path = ../base/CCNinePatchImageParser.h; sourceTree = "<group>"; };
 		291901421B05895600F8B4BA /* CCNinePatchImageParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CCNinePatchImageParser.cpp; path = ../base/CCNinePatchImageParser.cpp; sourceTree = "<group>"; };
 		292DB15D19B461CA00A80320 /* ExtensionDeprecated.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ExtensionDeprecated.cpp; sourceTree = "<group>"; };
 		292DB15E19B461CA00A80320 /* ExtensionDeprecated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtensionDeprecated.h; sourceTree = "<group>"; };
-		292F1A5B1A5151CE00E479F8 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
-		292F1A5C1A5151CE00E479F8 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
-		292F1A601A52447100E479F8 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = ../external/curl/prebuilt/mac/libcrypto.a; sourceTree = "<group>"; };
-		292F1A611A52447100E479F8 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../external/curl/prebuilt/mac/libcurl.a; sourceTree = "<group>"; };
 		292F1A661A524F2700E479F8 /* libssl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libssl.dylib; path = usr/lib/libssl.dylib; sourceTree = SDKROOT; };
-		292F1A6A1A5250F700E479F8 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = ../external/curl/prebuilt/mac/libssl.a; sourceTree = "<group>"; };
 		294D7D921D0E67B4002CE7B7 /* CCDevice-apple.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "CCDevice-apple.mm"; sourceTree = "<group>"; };
 		294D7D931D0E67B4002CE7B7 /* CCDevice-apple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CCDevice-apple.h"; sourceTree = "<group>"; };
 		298C75D31C0465D0006BAE63 /* CCStencilStateManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CCStencilStateManager.cpp; path = ../base/CCStencilStateManager.cpp; sourceTree = "<group>"; };
@@ -1883,11 +1875,9 @@
 			files = (
 				ED682BC5213F6CBF001BF6CB /* libuv_a.a in Frameworks */,
 				ED682BC3213F6C7A001BF6CB /* libwebsockets.a in Frameworks */,
-				507B3D081C31BDD30067B53E /* libssl.a in Frameworks */,
 				507B3D091C31BDD30067B53E /* Foundation.framework in Frameworks */,
 				507B3D0A1C31BDD30067B53E /* libpng.a in Frameworks */,
 				507B3D0B1C31BDD30067B53E /* libjpeg.a in Frameworks */,
-				507B3D0D1C31BDD30067B53E /* libcrypto.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2271,7 +2261,6 @@
 				382383E11A258FA7002C4610 /* flatbuffers */,
 				1AC026971914068200FA920D /* ConvertUTF */,
 				46C02E0418E91123004B7456 /* xxhash */,
-				1AAF5403180E3B2D000584C8 /* curl */,
 				1A087AE51860400400196EF5 /* edtaa3func */,
 				1A570373180BD1790088DEC7 /* jpeg */,
 				1A57035C180BD0D90088DEC7 /* png */,
@@ -2347,34 +2336,6 @@
 			path = "assets-manager";
 			sourceTree = "<group>";
 		};
-		1AAF5403180E3B2D000584C8 /* curl */ = {
-			isa = PBXGroup;
-			children = (
-				1AAF5405180E3B38000584C8 /* prebuilt */,
-			);
-			name = curl;
-			sourceTree = "<group>";
-		};
-		1AAF5405180E3B38000584C8 /* prebuilt */ = {
-			isa = PBXGroup;
-			children = (
-				292F1A5F1A52446100E479F8 /* mac */,
-				1AAF541B180E3B6A000584C8 /* ios */,
-			);
-			name = prebuilt;
-			sourceTree = "<group>";
-		};
-		1AAF541B180E3B6A000584C8 /* ios */ = {
-			isa = PBXGroup;
-			children = (
-				292F1A5B1A5151CE00E479F8 /* libcrypto.a */,
-				292F1A5C1A5151CE00E479F8 /* libssl.a */,
-				1AAF541C180E3B6A000584C8 /* libcurl.a */,
-			);
-			name = ios;
-			path = ../external/curl/prebuilt/ios;
-			sourceTree = "<group>";
-		};
 		1AC026971914068200FA920D /* ConvertUTF */ = {
 			isa = PBXGroup;
 			children = (
@@ -2384,16 +2345,6 @@
 			);
 			name = ConvertUTF;
 			path = ../external/ConvertUTF;
-			sourceTree = "<group>";
-		};
-		292F1A5F1A52446100E479F8 /* mac */ = {
-			isa = PBXGroup;
-			children = (
-				292F1A6A1A5250F700E479F8 /* libssl.a */,
-				292F1A601A52447100E479F8 /* libcrypto.a */,
-				292F1A611A52447100E479F8 /* libcurl.a */,
-			);
-			name = mac;
 			sourceTree = "<group>";
 		};
 		382383E11A258FA7002C4610 /* flatbuffers */ = {

@@ -74,8 +74,7 @@ void Scene::onEnter()
 Scene::~Scene()
 {
 
-
-    Director::getInstance()->getEventDispatcher()->removeEventListener(_event);
+  Director::getInstance()->getEventDispatcher()->removeEventListener(_event);
     CC_SAFE_RELEASE(_event);
     
     
