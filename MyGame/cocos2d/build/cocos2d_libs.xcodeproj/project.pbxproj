@@ -122,22 +122,10 @@
 		1A57009F180BC5D20088DEC7 /* CCNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A57009C180BC5D20088DEC7 /* CCNode.cpp */; };
 		1A5700A0180BC5D20088DEC7 /* CCNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A57009D180BC5D20088DEC7 /* CCNode.h */; };
 		1A5700A1180BC5D20088DEC7 /* CCNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A57009D180BC5D20088DEC7 /* CCNode.h */; };
-		1A57010E180BC8EE0088DEC7 /* CCDrawingPrimitives.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A57010A180BC8ED0088DEC7 /* CCDrawingPrimitives.cpp */; };
-		1A57010F180BC8EE0088DEC7 /* CCDrawingPrimitives.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A57010A180BC8ED0088DEC7 /* CCDrawingPrimitives.cpp */; };
-		1A570110180BC8EE0088DEC7 /* CCDrawingPrimitives.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A57010B180BC8EE0088DEC7 /* CCDrawingPrimitives.h */; };
-		1A570111180BC8EE0088DEC7 /* CCDrawingPrimitives.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A57010B180BC8EE0088DEC7 /* CCDrawingPrimitives.h */; };
 		1A570112180BC8EE0088DEC7 /* CCDrawNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A57010C180BC8EE0088DEC7 /* CCDrawNode.cpp */; };
 		1A570113180BC8EE0088DEC7 /* CCDrawNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A57010C180BC8EE0088DEC7 /* CCDrawNode.cpp */; };
 		1A570114180BC8EE0088DEC7 /* CCDrawNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A57010D180BC8EE0088DEC7 /* CCDrawNode.h */; };
 		1A570115180BC8EE0088DEC7 /* CCDrawNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A57010D180BC8EE0088DEC7 /* CCDrawNode.h */; };
-		1A57011B180BC90D0088DEC7 /* CCGrabber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A570117180BC90D0088DEC7 /* CCGrabber.cpp */; };
-		1A57011C180BC90D0088DEC7 /* CCGrabber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A570117180BC90D0088DEC7 /* CCGrabber.cpp */; };
-		1A57011D180BC90D0088DEC7 /* CCGrabber.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A570118180BC90D0088DEC7 /* CCGrabber.h */; };
-		1A57011E180BC90D0088DEC7 /* CCGrabber.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A570118180BC90D0088DEC7 /* CCGrabber.h */; };
-		1A57011F180BC90D0088DEC7 /* CCGrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A570119180BC90D0088DEC7 /* CCGrid.cpp */; };
-		1A570120180BC90D0088DEC7 /* CCGrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A570119180BC90D0088DEC7 /* CCGrid.cpp */; };
-		1A570121180BC90D0088DEC7 /* CCGrid.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A57011A180BC90D0088DEC7 /* CCGrid.h */; };
-		1A570122180BC90D0088DEC7 /* CCGrid.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A57011A180BC90D0088DEC7 /* CCGrid.h */; };
 		1A5701DE180BCB8C0088DEC7 /* CCLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A5701D4180BCB8C0088DEC7 /* CCLayer.cpp */; };
 		1A5701DF180BCB8C0088DEC7 /* CCLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A5701D4180BCB8C0088DEC7 /* CCLayer.cpp */; };
 		1A5701E0180BCB8C0088DEC7 /* CCLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A5701D5180BCB8C0088DEC7 /* CCLayer.h */; };
@@ -399,7 +387,6 @@
 		507B39D91C31BDD30067B53E /* CCGroupCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50ABBD721925AB4100A911A9 /* CCGroupCommand.cpp */; };
 		507B39DC1C31BDD30067B53E /* CCImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50ABBF271926664700A911A9 /* CCImage.cpp */; };
 		507B39E71C31BDD30067B53E /* CCTrianglesCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B230ED6F19B417AE00364AA8 /* CCTrianglesCommand.cpp */; };
-		507B39EB1C31BDD30067B53E /* CCNodeGrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED9C6A9218599AD8000A5232 /* CCNodeGrid.cpp */; };
 		507B39F01C31BDD30067B53E /* CCVertexIndexData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B276EF5C1988D1D500CD400F /* CCVertexIndexData.cpp */; };
 		507B39F11C31BDD30067B53E /* CCEventFocus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50ABBDDC1925AB6E00A911A9 /* CCEventFocus.cpp */; };
 		507B39F41C31BDD30067B53E /* CCApplication-ios.mm in Sources */ = {isa = PBXBuildFile; fileRef = 503DD8CF1926736A00CD74DD /* CCApplication-ios.mm */; };
@@ -436,10 +423,7 @@
 		507B3AAA1C31BDD30067B53E /* CCDirector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50ABBDD21925AB6E00A911A9 /* CCDirector.cpp */; };
 		507B3AD11C31BDD30067B53E /* MathUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50ABBD261925AB0000A911A9 /* MathUtil.cpp */; };
 		507B3AD51C31BDD30067B53E /* CCNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A57009C180BC5D20088DEC7 /* CCNode.cpp */; };
-		507B3AD61C31BDD30067B53E /* CCDrawingPrimitives.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A57010A180BC8ED0088DEC7 /* CCDrawingPrimitives.cpp */; };
 		507B3AD81C31BDD30067B53E /* CCDrawNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A57010C180BC8EE0088DEC7 /* CCDrawNode.cpp */; };
-		507B3AD91C31BDD30067B53E /* CCGrabber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A570117180BC90D0088DEC7 /* CCGrabber.cpp */; };
-		507B3ADC1C31BDD30067B53E /* CCGrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A570119180BC90D0088DEC7 /* CCGrid.cpp */; };
 		507B3ADF1C31BDD30067B53E /* CCPlane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E9F61241A3FFE3D0038DE01 /* CCPlane.cpp */; };
 		507B3AE41C31BDD30067B53E /* CCEventListenerAssetsManagerEx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15B3707219EE414C00ABE682 /* CCEventListenerAssetsManagerEx.cpp */; };
 		507B3AE61C31BDD30067B53E /* CCCommon-ios.mm in Sources */ = {isa = PBXBuildFile; fileRef = 503DD8D01926736A00CD74DD /* CCCommon-ios.mm */; };
@@ -610,15 +594,12 @@
 		507B3E131C31BDD30067B53E /* ccMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 50ABBDF51925AB6E00A911A9 /* ccMacros.h */; };
 		507B3E161C31BDD30067B53E /* CCFileUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 50ABBF241926664700A911A9 /* CCFileUtils.h */; };
 		507B3E1B1C31BDD30067B53E /* ccShader_PositionTexture.vert in Headers */ = {isa = PBXBuildFile; fileRef = 5034CA02191D591000CE6051 /* ccShader_PositionTexture.vert */; };
-		507B3E1D1C31BDD30067B53E /* CCDrawingPrimitives.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A57010B180BC8EE0088DEC7 /* CCDrawingPrimitives.h */; };
 		507B3E1F1C31BDD30067B53E /* CCConsole.h in Headers */ = {isa = PBXBuildFile; fileRef = 50ABBDCD1925AB6E00A911A9 /* CCConsole.h */; };
 		507B3E211C31BDD30067B53E /* CCMap.h in Headers */ = {isa = PBXBuildFile; fileRef = 50ABBDF61925AB6E00A911A9 /* CCMap.h */; };
 		507B3E231C31BDD30067B53E /* CCEAGLView-ios.h in Headers */ = {isa = PBXBuildFile; fileRef = 503DD8D41926736A00CD74DD /* CCEAGLView-ios.h */; };
 		507B3E241C31BDD30067B53E /* CCEventAcceleration.h in Headers */ = {isa = PBXBuildFile; fileRef = 50ABBDD71925AB6E00A911A9 /* CCEventAcceleration.h */; };
 		507B3E271C31BDD30067B53E /* TransformUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 50ABBD2E1925AB0000A911A9 /* TransformUtils.h */; };
 		507B3E291C31BDD30067B53E /* CCDrawNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A57010D180BC8EE0088DEC7 /* CCDrawNode.h */; };
-		507B3E2C1C31BDD30067B53E /* CCGrabber.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A570118180BC90D0088DEC7 /* CCGrabber.h */; };
-		507B3E2F1C31BDD30067B53E /* CCGrid.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A57011A180BC90D0088DEC7 /* CCGrid.h */; };
 		507B3E321C31BDD30067B53E /* ccShader_PositionTextureA8Color.frag in Headers */ = {isa = PBXBuildFile; fileRef = 5034CA01191D591000CE6051 /* ccShader_PositionTextureA8Color.frag */; };
 		507B3E361C31BDD30067B53E /* Vec2.h in Headers */ = {isa = PBXBuildFile; fileRef = 50ABBD301925AB0000A911A9 /* Vec2.h */; };
 		507B3E381C31BDD30067B53E /* CCAllocatorStrategyGlobalSmallBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = D0FD03451A3B51AA00825BB5 /* CCAllocatorStrategyGlobalSmallBlock.h */; };
@@ -752,7 +733,6 @@
 		507B40911C31BDD30067B53E /* base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 50ABBDC41925AB6E00A911A9 /* base64.h */; };
 		507B409E1C31BDD30067B53E /* CCTextureCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 50ABBD821925AB4100A911A9 /* CCTextureCache.h */; };
 		507B409F1C31BDD30067B53E /* CCVertexIndexBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = B276EF5D1988D1D500CD400F /* CCVertexIndexBuffer.h */; };
-		507B40A11C31BDD30067B53E /* CCNodeGrid.h in Headers */ = {isa = PBXBuildFile; fileRef = ED9C6A9318599AD8000A5232 /* CCNodeGrid.h */; };
 		507B40A21C31BDD30067B53E /* CCThread.h in Headers */ = {isa = PBXBuildFile; fileRef = 50ABBF2C1926664700A911A9 /* CCThread.h */; };
 		507B40A71C31BDD30067B53E /* Export.h in Headers */ = {isa = PBXBuildFile; fileRef = 46A15FE11807A56F005B8026 /* Export.h */; };
 		507B40BF1C31BDD30067B53E /* SimpleAudioEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 46A15FE21807A56F005B8026 /* SimpleAudioEngine.h */; };
@@ -1174,10 +1154,6 @@
 		ED682BC1213F63CB001BF6CB /* libuv_a.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED682BC0213F63CB001BF6CB /* libuv_a.a */; };
 		ED682BC3213F6C7A001BF6CB /* libwebsockets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED682BC2213F6C7A001BF6CB /* libwebsockets.a */; };
 		ED682BC5213F6CBF001BF6CB /* libuv_a.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED682BC4213F6CBE001BF6CB /* libuv_a.a */; };
-		ED9C6A9418599AD8000A5232 /* CCNodeGrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED9C6A9218599AD8000A5232 /* CCNodeGrid.cpp */; };
-		ED9C6A9518599AD8000A5232 /* CCNodeGrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED9C6A9218599AD8000A5232 /* CCNodeGrid.cpp */; };
-		ED9C6A9618599AD8000A5232 /* CCNodeGrid.h in Headers */ = {isa = PBXBuildFile; fileRef = ED9C6A9318599AD8000A5232 /* CCNodeGrid.h */; };
-		ED9C6A9718599AD8000A5232 /* CCNodeGrid.h in Headers */ = {isa = PBXBuildFile; fileRef = ED9C6A9318599AD8000A5232 /* CCNodeGrid.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1228,14 +1204,8 @@
 		1A4C3AB91E9B7A45001972CC /* CCStencilStateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCStencilStateManager.h; path = ../base/CCStencilStateManager.h; sourceTree = "<group>"; };
 		1A57009C180BC5D20088DEC7 /* CCNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCNode.cpp; sourceTree = "<group>"; };
 		1A57009D180BC5D20088DEC7 /* CCNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCNode.h; sourceTree = "<group>"; };
-		1A57010A180BC8ED0088DEC7 /* CCDrawingPrimitives.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCDrawingPrimitives.cpp; sourceTree = "<group>"; };
-		1A57010B180BC8EE0088DEC7 /* CCDrawingPrimitives.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCDrawingPrimitives.h; sourceTree = "<group>"; };
 		1A57010C180BC8EE0088DEC7 /* CCDrawNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = CCDrawNode.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		1A57010D180BC8EE0088DEC7 /* CCDrawNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCDrawNode.h; sourceTree = "<group>"; };
-		1A570117180BC90D0088DEC7 /* CCGrabber.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCGrabber.cpp; sourceTree = "<group>"; };
-		1A570118180BC90D0088DEC7 /* CCGrabber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCGrabber.h; sourceTree = "<group>"; };
-		1A570119180BC90D0088DEC7 /* CCGrid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCGrid.cpp; sourceTree = "<group>"; };
-		1A57011A180BC90D0088DEC7 /* CCGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCGrid.h; sourceTree = "<group>"; };
 		1A5701D4180BCB8C0088DEC7 /* CCLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = CCLayer.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		1A5701D5180BCB8C0088DEC7 /* CCLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCLayer.h; sourceTree = "<group>"; };
 		1A5701D6180BCB8C0088DEC7 /* CCScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCScene.cpp; sourceTree = "<group>"; };
@@ -1644,8 +1614,6 @@
 		ED682BC0213F63CB001BF6CB /* libuv_a.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libuv_a.a; path = ../external/uv/prebuilt/ios/libuv_a.a; sourceTree = "<group>"; };
 		ED682BC2213F6C7A001BF6CB /* libwebsockets.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwebsockets.a; path = ../external/websockets/prebuilt/tvos/libwebsockets.a; sourceTree = "<group>"; };
 		ED682BC4213F6CBE001BF6CB /* libuv_a.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libuv_a.a; path = ../external/uv/prebuilt/tvos/libuv_a.a; sourceTree = "<group>"; };
-		ED9C6A9218599AD8000A5232 /* CCNodeGrid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = CCNodeGrid.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
-		ED9C6A9318599AD8000A5232 /* CCNodeGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCNodeGrid.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1949,23 +1917,10 @@
 		1A570109180BC8DC0088DEC7 /* draw-nodes */ = {
 			isa = PBXGroup;
 			children = (
-				1A57010A180BC8ED0088DEC7 /* CCDrawingPrimitives.cpp */,
-				1A57010B180BC8EE0088DEC7 /* CCDrawingPrimitives.h */,
 				1A57010C180BC8EE0088DEC7 /* CCDrawNode.cpp */,
 				1A57010D180BC8EE0088DEC7 /* CCDrawNode.h */,
 			);
 			name = "draw-nodes";
-			sourceTree = "<group>";
-		};
-		1A570116180BC8FE0088DEC7 /* effects */ = {
-			isa = PBXGroup;
-			children = (
-				1A570117180BC90D0088DEC7 /* CCGrabber.cpp */,
-				1A570118180BC90D0088DEC7 /* CCGrabber.h */,
-				1A570119180BC90D0088DEC7 /* CCGrid.cpp */,
-				1A57011A180BC90D0088DEC7 /* CCGrid.h */,
-			);
-			name = effects;
 			sourceTree = "<group>";
 		};
 		1A5701D3180BCB670088DEC7 /* layers-scenes-transitions-nodes */ = {
@@ -1982,8 +1937,6 @@
 		1A5701FF180BCBBD0088DEC7 /* misc-nodes */ = {
 			isa = PBXGroup;
 			children = (
-				ED9C6A9218599AD8000A5232 /* CCNodeGrid.cpp */,
-				ED9C6A9318599AD8000A5232 /* CCNodeGrid.h */,
 				1A57020E180BCBF40088DEC7 /* CCRenderTexture.cpp */,
 				1A57020F180BCBF40088DEC7 /* CCRenderTexture.h */,
 			);
@@ -2215,7 +2168,6 @@
 				1A9DCA03180E6955007A3AD4 /* CCGLBufferedNode.h */,
 				1A570095180BC5B00088DEC7 /* base-nodes */,
 				1A570109180BC8DC0088DEC7 /* draw-nodes */,
-				1A570116180BC8FE0088DEC7 /* effects */,
 				1A5701D3180BCB670088DEC7 /* layers-scenes-transitions-nodes */,
 				1A5701FF180BCBBD0088DEC7 /* misc-nodes */,
 				1A570218180BCC000088DEC7 /* particle-nodes */,
@@ -2571,7 +2523,6 @@
 				1A5FB7C41DF012D900C918C1 /* AudioMacros.h in Headers */,
 				B276EF5F1988D1D500CD400F /* CCVertexIndexData.h in Headers */,
 				50ABBD911925AB4100A911A9 /* CCGLProgramCache.h in Headers */,
-				ED9C6A9618599AD8000A5232 /* CCNodeGrid.h in Headers */,
 				15FB20891AE7C57D00C31518 /* shapes.h in Headers */,
 				15AE184819AAD2F700C27E9E /* cocos3d.h in Headers */,
 				50ABBEC31925AB6F00A911A9 /* CCVector.h in Headers */,
@@ -2583,12 +2534,9 @@
 				D0FD035B1A3B51AA00825BB5 /* CCAllocatorStrategyFixedBlock.h in Headers */,
 				1A5700A0180BC5D20088DEC7 /* CCNode.h in Headers */,
 				46C02E0918E91123004B7456 /* xxhash.h in Headers */,
-				1A570110180BC8EE0088DEC7 /* CCDrawingPrimitives.h in Headers */,
 				50CB247D19D9C5A100687767 /* AudioPlayer.h in Headers */,
 				1A570114180BC8EE0088DEC7 /* CCDrawNode.h in Headers */,
 				15B3707A19EE414C00ABE682 /* AssetsManagerEx.h in Headers */,
-				1A57011D180BC90D0088DEC7 /* CCGrabber.h in Headers */,
-				1A570121180BC90D0088DEC7 /* CCGrid.h in Headers */,
 				468A14E01EF223B600ECA675 /* flatbuffers.h in Headers */,
 				5034CA2D191D591100CE6051 /* ccShader_PositionTextureA8Color.frag in Headers */,
 				1AC0269C1914068200FA920D /* ConvertUTF.h in Headers */,
@@ -2808,15 +2756,12 @@
 				507B3E161C31BDD30067B53E /* CCFileUtils.h in Headers */,
 				507B3E1B1C31BDD30067B53E /* ccShader_PositionTexture.vert in Headers */,
 				468A14E21EF223B700ECA675 /* flatbuffers.h in Headers */,
-				507B3E1D1C31BDD30067B53E /* CCDrawingPrimitives.h in Headers */,
 				507B3E1F1C31BDD30067B53E /* CCConsole.h in Headers */,
 				507B3E211C31BDD30067B53E /* CCMap.h in Headers */,
 				507B3E231C31BDD30067B53E /* CCEAGLView-ios.h in Headers */,
 				507B3E241C31BDD30067B53E /* CCEventAcceleration.h in Headers */,
 				507B3E271C31BDD30067B53E /* TransformUtils.h in Headers */,
 				507B3E291C31BDD30067B53E /* CCDrawNode.h in Headers */,
-				507B3E2C1C31BDD30067B53E /* CCGrabber.h in Headers */,
-				507B3E2F1C31BDD30067B53E /* CCGrid.h in Headers */,
 				507B3E321C31BDD30067B53E /* ccShader_PositionTextureA8Color.frag in Headers */,
 				507B3E361C31BDD30067B53E /* Vec2.h in Headers */,
 				507B3E381C31BDD30067B53E /* CCAllocatorStrategyGlobalSmallBlock.h in Headers */,
@@ -2955,7 +2900,6 @@
 				507B40911C31BDD30067B53E /* base64.h in Headers */,
 				507B409E1C31BDD30067B53E /* CCTextureCache.h in Headers */,
 				507B409F1C31BDD30067B53E /* CCVertexIndexBuffer.h in Headers */,
-				507B40A11C31BDD30067B53E /* CCNodeGrid.h in Headers */,
 				507B40A21C31BDD30067B53E /* CCThread.h in Headers */,
 				507B40A71C31BDD30067B53E /* Export.h in Headers */,
 				507B40BF1C31BDD30067B53E /* SimpleAudioEngine.h in Headers */,
@@ -3032,7 +2976,6 @@
 				50ABBE881925AB6F00A911A9 /* ccMacros.h in Headers */,
 				50ABC0101926664800A911A9 /* CCFileUtils.h in Headers */,
 				5034CA30191D591100CE6051 /* ccShader_PositionTexture.vert in Headers */,
-				1A570111180BC8EE0088DEC7 /* CCDrawingPrimitives.h in Headers */,
 				468A14E11EF223B700ECA675 /* flatbuffers.h in Headers */,
 				50ABBE381925AB6F00A911A9 /* CCConsole.h in Headers */,
 				50ABBE8A1925AB6F00A911A9 /* CCMap.h in Headers */,
@@ -3040,8 +2983,6 @@
 				50ABBE4C1925AB6F00A911A9 /* CCEventAcceleration.h in Headers */,
 				50ABBD571925AB0000A911A9 /* TransformUtils.h in Headers */,
 				1A570115180BC8EE0088DEC7 /* CCDrawNode.h in Headers */,
-				1A57011E180BC90D0088DEC7 /* CCGrabber.h in Headers */,
-				1A570122180BC90D0088DEC7 /* CCGrid.h in Headers */,
 				5034CA2E191D591100CE6051 /* ccShader_PositionTextureA8Color.frag in Headers */,
 				50ABBD5B1925AB0000A911A9 /* Vec2.h in Headers */,
 				D0FD035E1A3B51AA00825BB5 /* CCAllocatorStrategyGlobalSmallBlock.h in Headers */,
@@ -3181,7 +3122,6 @@
 				50ABBE261925AB6F00A911A9 /* base64.h in Headers */,
 				50ABBDC01925AB4100A911A9 /* CCTextureCache.h in Headers */,
 				B276EF641988D1D500CD400F /* CCVertexIndexBuffer.h in Headers */,
-				ED9C6A9718599AD8000A5232 /* CCNodeGrid.h in Headers */,
 				50ABC0201926664800A911A9 /* CCThread.h in Headers */,
 				15AE184B19AAD30500C27E9E /* Export.h in Headers */,
 				15AE184D19AAD30800C27E9E /* SimpleAudioEngine.h in Headers */,
@@ -3299,7 +3239,6 @@
 				1A40D0DC1E8E4C76002E363A /* md5.c in Sources */,
 				50ABBDB11925AB4100A911A9 /* ccShaders.cpp in Sources */,
 				50ABBE991925AB6F00A911A9 /* CCRef.cpp in Sources */,
-				ED9C6A9418599AD8000A5232 /* CCNodeGrid.cpp in Sources */,
 				50ABBDA71925AB4100A911A9 /* CCRenderCommand.cpp in Sources */,
 				50ABBD501925AB0000A911A9 /* Quaternion.cpp in Sources */,
 				50ABBEBB1925AB6F00A911A9 /* ccUtils.cpp in Sources */,
@@ -3328,10 +3267,7 @@
 				50ABBE651925AB6F00A911A9 /* CCEventListenerCustom.cpp in Sources */,
 				D0FD034B1A3B51AA00825BB5 /* CCAllocatorDiagnostics.cpp in Sources */,
 				50ABBE391925AB6F00A911A9 /* CCData.cpp in Sources */,
-				1A57010E180BC8EE0088DEC7 /* CCDrawingPrimitives.cpp in Sources */,
 				1A570112180BC8EE0088DEC7 /* CCDrawNode.cpp in Sources */,
-				1A57011B180BC90D0088DEC7 /* CCGrabber.cpp in Sources */,
-				1A57011F180BC90D0088DEC7 /* CCGrid.cpp in Sources */,
 				50CB247B19D9C5A100687767 /* AudioEngine-inl.mm in Sources */,
 				50ABBE551925AB6F00A911A9 /* CCEventFocus.cpp in Sources */,
 				85B3743A1B204B9400C488D6 /* clipper.cpp in Sources */,
@@ -3461,7 +3397,6 @@
 				507B39D91C31BDD30067B53E /* CCGroupCommand.cpp in Sources */,
 				507B39DC1C31BDD30067B53E /* CCImage.cpp in Sources */,
 				507B39E71C31BDD30067B53E /* CCTrianglesCommand.cpp in Sources */,
-				507B39EB1C31BDD30067B53E /* CCNodeGrid.cpp in Sources */,
 				507B39F01C31BDD30067B53E /* CCVertexIndexData.cpp in Sources */,
 				507B39F11C31BDD30067B53E /* CCEventFocus.cpp in Sources */,
 				507B39F41C31BDD30067B53E /* CCApplication-ios.mm in Sources */,
@@ -3502,10 +3437,7 @@
 				468A14F71EF223B700ECA675 /* idl_parser.cpp in Sources */,
 				507B3AD11C31BDD30067B53E /* MathUtil.cpp in Sources */,
 				507B3AD51C31BDD30067B53E /* CCNode.cpp in Sources */,
-				507B3AD61C31BDD30067B53E /* CCDrawingPrimitives.cpp in Sources */,
 				507B3AD81C31BDD30067B53E /* CCDrawNode.cpp in Sources */,
-				507B3AD91C31BDD30067B53E /* CCGrabber.cpp in Sources */,
-				507B3ADC1C31BDD30067B53E /* CCGrid.cpp in Sources */,
 				507B3ADF1C31BDD30067B53E /* CCPlane.cpp in Sources */,
 				507B3AE41C31BDD30067B53E /* CCEventListenerAssetsManagerEx.cpp in Sources */,
 				507B3AE61C31BDD30067B53E /* CCCommon-ios.mm in Sources */,
@@ -3639,7 +3571,6 @@
 				50ABBDA01925AB4100A911A9 /* CCGroupCommand.cpp in Sources */,
 				50ABC0161926664800A911A9 /* CCImage.cpp in Sources */,
 				B230ED7219B417AE00364AA8 /* CCTrianglesCommand.cpp in Sources */,
-				ED9C6A9518599AD8000A5232 /* CCNodeGrid.cpp in Sources */,
 				B276EF621988D1D500CD400F /* CCVertexIndexData.cpp in Sources */,
 				50ABBE561925AB6F00A911A9 /* CCEventFocus.cpp in Sources */,
 				503DD8E11926736A00CD74DD /* CCApplication-ios.mm in Sources */,
@@ -3680,10 +3611,7 @@
 				468A14F61EF223B700ECA675 /* idl_parser.cpp in Sources */,
 				50ABBD4D1925AB0000A911A9 /* MathUtil.cpp in Sources */,
 				1A57009F180BC5D20088DEC7 /* CCNode.cpp in Sources */,
-				1A57010F180BC8EE0088DEC7 /* CCDrawingPrimitives.cpp in Sources */,
 				1A570113180BC8EE0088DEC7 /* CCDrawNode.cpp in Sources */,
-				1A57011C180BC90D0088DEC7 /* CCGrabber.cpp in Sources */,
-				1A570120180BC90D0088DEC7 /* CCGrid.cpp in Sources */,
 				5E9F612B1A3FFE3D0038DE01 /* CCPlane.cpp in Sources */,
 				15B3708119EE414C00ABE682 /* CCEventListenerAssetsManagerEx.cpp in Sources */,
 				503DD8E21926736A00CD74DD /* CCCommon-ios.mm in Sources */,

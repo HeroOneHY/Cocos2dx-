@@ -97,10 +97,8 @@ THE SOFTWARE.
 
 // 2d nodes
 #include "2d/CCDrawNode.h"
-#include "2d/CCDrawingPrimitives.h"
 #include "2d/CCLayer.h"
 #include "2d/CCNode.h"
-#include "2d/CCNodeGrid.h"
 #include "2d/CCParticleBatchNode.h"
 #include "2d/CCParticleExamples.h"
 #include "2d/CCParticleSystem.h"
@@ -112,8 +110,6 @@ THE SOFTWARE.
 // 2d utils
 #include "2d/CCCamera.h"
 #include "2d/CCCameraBackgroundBrush.h"
-#include "2d/CCGrabber.h"
-#include "2d/CCGrid.h"
 #include "2d/CCLight.h"
 
 // include
