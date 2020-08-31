@@ -138,22 +138,6 @@
 		1A570215180BCBF40088DEC7 /* CCRenderTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A57020E180BCBF40088DEC7 /* CCRenderTexture.cpp */; };
 		1A570216180BCBF40088DEC7 /* CCRenderTexture.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A57020F180BCBF40088DEC7 /* CCRenderTexture.h */; };
 		1A570217180BCBF40088DEC7 /* CCRenderTexture.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A57020F180BCBF40088DEC7 /* CCRenderTexture.h */; };
-		1A570221180BCC1A0088DEC7 /* CCParticleBatchNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A570219180BCC1A0088DEC7 /* CCParticleBatchNode.cpp */; };
-		1A570222180BCC1A0088DEC7 /* CCParticleBatchNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A570219180BCC1A0088DEC7 /* CCParticleBatchNode.cpp */; };
-		1A570223180BCC1A0088DEC7 /* CCParticleBatchNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A57021A180BCC1A0088DEC7 /* CCParticleBatchNode.h */; };
-		1A570224180BCC1A0088DEC7 /* CCParticleBatchNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A57021A180BCC1A0088DEC7 /* CCParticleBatchNode.h */; };
-		1A570225180BCC1A0088DEC7 /* CCParticleExamples.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A57021B180BCC1A0088DEC7 /* CCParticleExamples.cpp */; };
-		1A570226180BCC1A0088DEC7 /* CCParticleExamples.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A57021B180BCC1A0088DEC7 /* CCParticleExamples.cpp */; };
-		1A570227180BCC1A0088DEC7 /* CCParticleExamples.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A57021C180BCC1A0088DEC7 /* CCParticleExamples.h */; };
-		1A570228180BCC1A0088DEC7 /* CCParticleExamples.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A57021C180BCC1A0088DEC7 /* CCParticleExamples.h */; };
-		1A570229180BCC1A0088DEC7 /* CCParticleSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A57021D180BCC1A0088DEC7 /* CCParticleSystem.cpp */; };
-		1A57022A180BCC1A0088DEC7 /* CCParticleSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A57021D180BCC1A0088DEC7 /* CCParticleSystem.cpp */; };
-		1A57022B180BCC1A0088DEC7 /* CCParticleSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A57021E180BCC1A0088DEC7 /* CCParticleSystem.h */; };
-		1A57022C180BCC1A0088DEC7 /* CCParticleSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A57021E180BCC1A0088DEC7 /* CCParticleSystem.h */; };
-		1A57022D180BCC1A0088DEC7 /* CCParticleSystemQuad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A57021F180BCC1A0088DEC7 /* CCParticleSystemQuad.cpp */; };
-		1A57022E180BCC1A0088DEC7 /* CCParticleSystemQuad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A57021F180BCC1A0088DEC7 /* CCParticleSystemQuad.cpp */; };
-		1A57022F180BCC1A0088DEC7 /* CCParticleSystemQuad.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A570220180BCC1A0088DEC7 /* CCParticleSystemQuad.h */; };
-		1A570230180BCC1A0088DEC7 /* CCParticleSystemQuad.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A570220180BCC1A0088DEC7 /* CCParticleSystemQuad.h */; };
 		1A57027E180BCC900088DEC7 /* CCSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A570276180BCC900088DEC7 /* CCSprite.cpp */; };
 		1A57027F180BCC900088DEC7 /* CCSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A570276180BCC900088DEC7 /* CCSprite.cpp */; };
 		1A570280180BCC900088DEC7 /* CCSprite.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A570277180BCC900088DEC7 /* CCSprite.h */; };
@@ -451,12 +435,8 @@
 		507B3B6B1C31BDD30067B53E /* Mat4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50ABBD231925AB0000A911A9 /* Mat4.cpp */; };
 		507B3B711C31BDD30067B53E /* CCGLViewImpl-ios.mm in Sources */ = {isa = PBXBuildFile; fileRef = 503DD8DB1926736A00CD74DD /* CCGLViewImpl-ios.mm */; };
 		507B3B781C31BDD30067B53E /* CCRenderTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A57020E180BCBF40088DEC7 /* CCRenderTexture.cpp */; };
-		507B3B7A1C31BDD30067B53E /* CCParticleBatchNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A570219180BCC1A0088DEC7 /* CCParticleBatchNode.cpp */; };
 		507B3B7E1C31BDD30067B53E /* SimpleAudioEngine.mm in Sources */ = {isa = PBXBuildFile; fileRef = 46A15FEB1807A56F005B8026 /* SimpleAudioEngine.mm */; };
-		507B3B821C31BDD30067B53E /* CCParticleExamples.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A57021B180BCC1A0088DEC7 /* CCParticleExamples.cpp */; };
-		507B3B871C31BDD30067B53E /* CCParticleSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A57021D180BCC1A0088DEC7 /* CCParticleSystem.cpp */; };
 		507B3B891C31BDD30067B53E /* CCCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3EACC99C19F5014D00EB3C5E /* CCCamera.cpp */; };
-		507B3BA41C31BDD30067B53E /* CCParticleSystemQuad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A57021F180BCC1A0088DEC7 /* CCParticleSystemQuad.cpp */; };
 		507B3BA51C31BDD30067B53E /* CCGLProgramCache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50ABBD6A1925AB4100A911A9 /* CCGLProgramCache.cpp */; };
 		507B3BA91C31BDD30067B53E /* CCSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A570276180BCC900088DEC7 /* CCSprite.cpp */; };
 		507B3BB81C31BDD30067B53E /* CCSpriteBatchNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A570278180BCC900088DEC7 /* CCSpriteBatchNode.cpp */; };
@@ -635,12 +615,8 @@
 		507B3F0A1C31BDD30067B53E /* Manifest.h in Headers */ = {isa = PBXBuildFile; fileRef = 15B3707719EE414C00ABE682 /* Manifest.h */; };
 		507B3F0B1C31BDD30067B53E /* sweep.h in Headers */ = {isa = PBXBuildFile; fileRef = 15FB20841AE7C57D00C31518 /* sweep.h */; };
 		507B3F0E1C31BDD30067B53E /* CCRenderTexture.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A57020F180BCBF40088DEC7 /* CCRenderTexture.h */; };
-		507B3F161C31BDD30067B53E /* CCParticleBatchNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A57021A180BCC1A0088DEC7 /* CCParticleBatchNode.h */; };
 		507B3F181C31BDD30067B53E /* cdt.h in Headers */ = {isa = PBXBuildFile; fileRef = 15FB20821AE7C57D00C31518 /* cdt.h */; };
 		507B3F1F1C31BDD30067B53E /* CCIMEDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 503DD8F21926B0DB00CD74DD /* CCIMEDelegate.h */; };
-		507B3F211C31BDD30067B53E /* CCParticleExamples.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A57021C180BCC1A0088DEC7 /* CCParticleExamples.h */; };
-		507B3F231C31BDD30067B53E /* CCParticleSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A57021E180BCC1A0088DEC7 /* CCParticleSystem.h */; };
-		507B3F271C31BDD30067B53E /* CCParticleSystemQuad.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A570220180BCC1A0088DEC7 /* CCParticleSystemQuad.h */; };
 		507B3F311C31BDD30067B53E /* ccShader_PositionTextureA8Color.vert in Headers */ = {isa = PBXBuildFile; fileRef = 5034CA00191D591000CE6051 /* ccShader_PositionTextureA8Color.vert */; };
 		507B3F331C31BDD30067B53E /* CCProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = 50ABBDFD1925AB6E00A911A9 /* CCProtocols.h */; };
 		507B3F351C31BDD30067B53E /* AudioEngine-inl.h in Headers */ = {isa = PBXBuildFile; fileRef = 50CB247119D9C5A100687767 /* AudioEngine-inl.h */; };
@@ -1212,14 +1188,6 @@
 		1A5701D7180BCB8C0088DEC7 /* CCScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCScene.h; sourceTree = "<group>"; };
 		1A57020E180BCBF40088DEC7 /* CCRenderTexture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = CCRenderTexture.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		1A57020F180BCBF40088DEC7 /* CCRenderTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCRenderTexture.h; sourceTree = "<group>"; };
-		1A570219180BCC1A0088DEC7 /* CCParticleBatchNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCParticleBatchNode.cpp; sourceTree = "<group>"; };
-		1A57021A180BCC1A0088DEC7 /* CCParticleBatchNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCParticleBatchNode.h; sourceTree = "<group>"; };
-		1A57021B180BCC1A0088DEC7 /* CCParticleExamples.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCParticleExamples.cpp; sourceTree = "<group>"; };
-		1A57021C180BCC1A0088DEC7 /* CCParticleExamples.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCParticleExamples.h; sourceTree = "<group>"; };
-		1A57021D180BCC1A0088DEC7 /* CCParticleSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCParticleSystem.cpp; sourceTree = "<group>"; };
-		1A57021E180BCC1A0088DEC7 /* CCParticleSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCParticleSystem.h; sourceTree = "<group>"; };
-		1A57021F180BCC1A0088DEC7 /* CCParticleSystemQuad.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = CCParticleSystemQuad.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
-		1A570220180BCC1A0088DEC7 /* CCParticleSystemQuad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCParticleSystemQuad.h; sourceTree = "<group>"; };
 		1A570276180BCC900088DEC7 /* CCSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = CCSprite.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		1A570277180BCC900088DEC7 /* CCSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSprite.h; sourceTree = "<group>"; };
 		1A570278180BCC900088DEC7 /* CCSpriteBatchNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCSpriteBatchNode.cpp; sourceTree = "<group>"; };
@@ -1943,21 +1911,6 @@
 			name = "misc-nodes";
 			sourceTree = "<group>";
 		};
-		1A570218180BCC000088DEC7 /* particle-nodes */ = {
-			isa = PBXGroup;
-			children = (
-				1A570219180BCC1A0088DEC7 /* CCParticleBatchNode.cpp */,
-				1A57021A180BCC1A0088DEC7 /* CCParticleBatchNode.h */,
-				1A57021B180BCC1A0088DEC7 /* CCParticleExamples.cpp */,
-				1A57021C180BCC1A0088DEC7 /* CCParticleExamples.h */,
-				1A57021D180BCC1A0088DEC7 /* CCParticleSystem.cpp */,
-				1A57021E180BCC1A0088DEC7 /* CCParticleSystem.h */,
-				1A57021F180BCC1A0088DEC7 /* CCParticleSystemQuad.cpp */,
-				1A570220180BCC1A0088DEC7 /* CCParticleSystemQuad.h */,
-			);
-			name = "particle-nodes";
-			sourceTree = "<group>";
-		};
 		1A570275180BCC840088DEC7 /* sprite-nodes */ = {
 			isa = PBXGroup;
 			children = (
@@ -2170,7 +2123,6 @@
 				1A570109180BC8DC0088DEC7 /* draw-nodes */,
 				1A5701D3180BCB670088DEC7 /* layers-scenes-transitions-nodes */,
 				1A5701FF180BCBBD0088DEC7 /* misc-nodes */,
-				1A570218180BCC000088DEC7 /* particle-nodes */,
 				1A570275180BCC840088DEC7 /* sprite-nodes */,
 				1A57029A180BCD4F0088DEC7 /* support */,
 			);
@@ -2561,18 +2513,14 @@
 				50ABBD401925AB0000A911A9 /* CCMath.h in Headers */,
 				50643BE419BFCF1800EF68ED /* CCPlatformMacros.h in Headers */,
 				1A570216180BCBF40088DEC7 /* CCRenderTexture.h in Headers */,
-				1A570223180BCC1A0088DEC7 /* CCParticleBatchNode.h in Headers */,
 				50ABBD891925AB4100A911A9 /* CCCustomCommand.h in Headers */,
 				5034CA43191D591100CE6051 /* ccShader_Label.vert in Headers */,
-				1A570227180BCC1A0088DEC7 /* CCParticleExamples.h in Headers */,
-				1A57022B180BCC1A0088DEC7 /* CCParticleSystem.h in Headers */,
 				5034CA2F191D591100CE6051 /* ccShader_PositionTexture.vert in Headers */,
 				468A14F81EF223B700ECA675 /* idl.h in Headers */,
 				50ABBE951925AB6F00A911A9 /* CCProfiling.h in Headers */,
 				5034CA4B191D591100CE6051 /* ccShader_Label_df_glow.frag in Headers */,
 				50ABBE4F1925AB6F00A911A9 /* CCEventCustom.h in Headers */,
 				50ABBD521925AB0000A911A9 /* Quaternion.h in Headers */,
-				1A57022F180BCC1A0088DEC7 /* CCParticleSystemQuad.h in Headers */,
 				15FB20951AE7C57D00C31518 /* cdt.h in Headers */,
 				50643BE219BFCF1800EF68ED /* CCPlatformConfig.h in Headers */,
 				5034CA49191D591100CE6051 /* ccShader_Label_df.frag in Headers */,
@@ -2800,12 +2748,8 @@
 				507B3F0A1C31BDD30067B53E /* Manifest.h in Headers */,
 				507B3F0B1C31BDD30067B53E /* sweep.h in Headers */,
 				507B3F0E1C31BDD30067B53E /* CCRenderTexture.h in Headers */,
-				507B3F161C31BDD30067B53E /* CCParticleBatchNode.h in Headers */,
 				507B3F181C31BDD30067B53E /* cdt.h in Headers */,
 				507B3F1F1C31BDD30067B53E /* CCIMEDelegate.h in Headers */,
-				507B3F211C31BDD30067B53E /* CCParticleExamples.h in Headers */,
-				507B3F231C31BDD30067B53E /* CCParticleSystem.h in Headers */,
-				507B3F271C31BDD30067B53E /* CCParticleSystemQuad.h in Headers */,
 				1A41ABC81DF00D1500B5584C /* AudioDecoder.h in Headers */,
 				507B3F311C31BDD30067B53E /* ccShader_PositionTextureA8Color.vert in Headers */,
 				507B3F331C31BDD30067B53E /* CCProtocols.h in Headers */,
@@ -3021,12 +2965,8 @@
 				15B3708B19EE414C00ABE682 /* Manifest.h in Headers */,
 				15FB209A1AE7C57D00C31518 /* sweep.h in Headers */,
 				1A570217180BCBF40088DEC7 /* CCRenderTexture.h in Headers */,
-				1A570224180BCC1A0088DEC7 /* CCParticleBatchNode.h in Headers */,
 				15FB20961AE7C57D00C31518 /* cdt.h in Headers */,
 				503DD8F61926B0DB00CD74DD /* CCIMEDelegate.h in Headers */,
-				1A570228180BCC1A0088DEC7 /* CCParticleExamples.h in Headers */,
-				1A57022C180BCC1A0088DEC7 /* CCParticleSystem.h in Headers */,
-				1A570230180BCC1A0088DEC7 /* CCParticleSystemQuad.h in Headers */,
 				5034CA2C191D591100CE6051 /* ccShader_PositionTextureA8Color.vert in Headers */,
 				50ABBE981925AB6F00A911A9 /* CCProtocols.h in Headers */,
 				50CB247A19D9C5A100687767 /* AudioEngine-inl.h in Headers */,
@@ -3298,10 +3238,6 @@
 				A045F6DC1BA816A1005076C7 /* CCCameraBackgroundBrush.cpp in Sources */,
 				B276EF651988D1D500CD400F /* CCVertexIndexBuffer.cpp in Sources */,
 				50ABBE411925AB6F00A911A9 /* CCDirector.cpp in Sources */,
-				1A570221180BCC1A0088DEC7 /* CCParticleBatchNode.cpp in Sources */,
-				1A570225180BCC1A0088DEC7 /* CCParticleExamples.cpp in Sources */,
-				1A570229180BCC1A0088DEC7 /* CCParticleSystem.cpp in Sources */,
-				1A57022D180BCC1A0088DEC7 /* CCParticleSystemQuad.cpp in Sources */,
 				1A57027E180BCC900088DEC7 /* CCSprite.cpp in Sources */,
 				1A570282180BCC900088DEC7 /* CCSpriteBatchNode.cpp in Sources */,
 				1A570286180BCC900088DEC7 /* CCSpriteFrame.cpp in Sources */,
@@ -3467,12 +3403,8 @@
 				507B3B6B1C31BDD30067B53E /* Mat4.cpp in Sources */,
 				507B3B711C31BDD30067B53E /* CCGLViewImpl-ios.mm in Sources */,
 				507B3B781C31BDD30067B53E /* CCRenderTexture.cpp in Sources */,
-				507B3B7A1C31BDD30067B53E /* CCParticleBatchNode.cpp in Sources */,
 				507B3B7E1C31BDD30067B53E /* SimpleAudioEngine.mm in Sources */,
-				507B3B821C31BDD30067B53E /* CCParticleExamples.cpp in Sources */,
-				507B3B871C31BDD30067B53E /* CCParticleSystem.cpp in Sources */,
 				507B3B891C31BDD30067B53E /* CCCamera.cpp in Sources */,
-				507B3BA41C31BDD30067B53E /* CCParticleSystemQuad.cpp in Sources */,
 				507B3BA51C31BDD30067B53E /* CCGLProgramCache.cpp in Sources */,
 				507B3BA91C31BDD30067B53E /* CCSprite.cpp in Sources */,
 				507B3BB81C31BDD30067B53E /* CCSpriteBatchNode.cpp in Sources */,
@@ -3641,12 +3573,8 @@
 				50ABBD491925AB0000A911A9 /* Mat4.cpp in Sources */,
 				503DD8ED1926736A00CD74DD /* CCGLViewImpl-ios.mm in Sources */,
 				1A570215180BCBF40088DEC7 /* CCRenderTexture.cpp in Sources */,
-				1A570222180BCC1A0088DEC7 /* CCParticleBatchNode.cpp in Sources */,
 				15AE185F19AAD31200C27E9E /* SimpleAudioEngine.mm in Sources */,
-				1A570226180BCC1A0088DEC7 /* CCParticleExamples.cpp in Sources */,
-				1A57022A180BCC1A0088DEC7 /* CCParticleSystem.cpp in Sources */,
 				3EACC9A119F5014D00EB3C5E /* CCCamera.cpp in Sources */,
-				1A57022E180BCC1A0088DEC7 /* CCParticleSystemQuad.cpp in Sources */,
 				50ABBD901925AB4100A911A9 /* CCGLProgramCache.cpp in Sources */,
 				1A57027F180BCC900088DEC7 /* CCSprite.cpp in Sources */,
 				294D7D951D0E67B4002CE7B7 /* CCDevice-apple.mm in Sources */,
