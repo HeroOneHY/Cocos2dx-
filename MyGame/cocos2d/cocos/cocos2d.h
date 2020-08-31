@@ -96,20 +96,15 @@ THE SOFTWARE.
 
 
 // 2d nodes
-#include "2d/CCAtlasNode.h"
-#include "2d/CCClippingNode.h"
-#include "2d/CCClippingRectangleNode.h"
 #include "2d/CCDrawNode.h"
 #include "2d/CCDrawingPrimitives.h"
 #include "2d/CCLayer.h"
-#include "2d/CCMotionStreak.h"
 #include "2d/CCNode.h"
 #include "2d/CCNodeGrid.h"
 #include "2d/CCParticleBatchNode.h"
 #include "2d/CCParticleExamples.h"
 #include "2d/CCParticleSystem.h"
 #include "2d/CCParticleSystemQuad.h"
-#include "2d/CCProgressTimer.h"
 #include "2d/CCProtectedNode.h"
 #include "2d/CCRenderTexture.h"
 #include "2d/CCScene.h"
