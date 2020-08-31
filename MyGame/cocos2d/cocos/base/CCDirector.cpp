@@ -45,7 +45,6 @@ THE SOFTWARE.
 #include "renderer/CCFrameBuffer.h"
 #include "2d/CCCamera.h"
 #include "base/CCUserDefault.h"
-#include "base/ccFPSImages.h"
 #include "base/CCScheduler.h"
 #include "base/ccMacros.h"
 #include "base/CCEventDispatcher.h"

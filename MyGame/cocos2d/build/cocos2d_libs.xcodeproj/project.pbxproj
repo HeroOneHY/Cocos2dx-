@@ -478,7 +478,6 @@
 		507B3CD21C31BDD30067B53E /* CCEventListenerMouse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50ABBDEA1925AB6E00A911A9 /* CCEventListenerMouse.cpp */; };
 		507B3CD61C31BDD30067B53E /* CCFileUtils-apple.mm in Sources */ = {isa = PBXBuildFile; fileRef = 50ABBF1C1926664700A911A9 /* CCFileUtils-apple.mm */; };
 		507B3CD71C31BDD30067B53E /* ccUTF8.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50ABBE0D1925AB6F00A911A9 /* ccUTF8.cpp */; };
-		507B3CD91C31BDD30067B53E /* ccFPSImages.c in Sources */ = {isa = PBXBuildFile; fileRef = 50ABBDF31925AB6E00A911A9 /* ccFPSImages.c */; };
 		507B3CDB1C31BDD30067B53E /* CCEventAcceleration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50ABBDD61925AB6E00A911A9 /* CCEventAcceleration.cpp */; };
 		507B3CDF1C31BDD30067B53E /* xxhash.c in Sources */ = {isa = PBXBuildFile; fileRef = 46C02E0518E91123004B7456 /* xxhash.c */; };
 		507B3CE11C31BDD30067B53E /* CCAllocatorDiagnostics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0FD033C1A3B51AA00825BB5 /* CCAllocatorDiagnostics.cpp */; };
@@ -509,7 +508,6 @@
 		507B3D4B1C31BDD30067B53E /* ExtensionDeprecated.h in Headers */ = {isa = PBXBuildFile; fileRef = 292DB15E19B461CA00A80320 /* ExtensionDeprecated.h */; };
 		507B3D4C1C31BDD30067B53E /* CCGLProgramState.h in Headers */ = {isa = PBXBuildFile; fileRef = 50ABBD6D1925AB4100A911A9 /* CCGLProgramState.h */; };
 		507B3D4E1C31BDD30067B53E /* ccShaders.h in Headers */ = {isa = PBXBuildFile; fileRef = 50ABBD7C1925AB4100A911A9 /* ccShaders.h */; };
-		507B3D571C31BDD30067B53E /* ccFPSImages.h in Headers */ = {isa = PBXBuildFile; fileRef = 50ABBDF41925AB6E00A911A9 /* ccFPSImages.h */; };
 		507B3D5C1C31BDD30067B53E /* ccCArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 50ABBDC81925AB6E00A911A9 /* ccCArray.h */; };
 		507B3D5E1C31BDD30067B53E /* AssetsManagerEx.h in Headers */ = {isa = PBXBuildFile; fileRef = 15B3706F19EE414C00ABE682 /* AssetsManagerEx.h */; };
 		507B3D661C31BDD30067B53E /* CCLock-apple.h in Headers */ = {isa = PBXBuildFile; fileRef = 50ABBF1E1926664700A911A9 /* CCLock-apple.h */; };
@@ -895,10 +893,6 @@
 		50ABBE801925AB6F00A911A9 /* CCEventTouch.h in Headers */ = {isa = PBXBuildFile; fileRef = 50ABBDF11925AB6E00A911A9 /* CCEventTouch.h */; };
 		50ABBE811925AB6F00A911A9 /* CCEventType.h in Headers */ = {isa = PBXBuildFile; fileRef = 50ABBDF21925AB6E00A911A9 /* CCEventType.h */; };
 		50ABBE821925AB6F00A911A9 /* CCEventType.h in Headers */ = {isa = PBXBuildFile; fileRef = 50ABBDF21925AB6E00A911A9 /* CCEventType.h */; };
-		50ABBE831925AB6F00A911A9 /* ccFPSImages.c in Sources */ = {isa = PBXBuildFile; fileRef = 50ABBDF31925AB6E00A911A9 /* ccFPSImages.c */; };
-		50ABBE841925AB6F00A911A9 /* ccFPSImages.c in Sources */ = {isa = PBXBuildFile; fileRef = 50ABBDF31925AB6E00A911A9 /* ccFPSImages.c */; };
-		50ABBE851925AB6F00A911A9 /* ccFPSImages.h in Headers */ = {isa = PBXBuildFile; fileRef = 50ABBDF41925AB6E00A911A9 /* ccFPSImages.h */; };
-		50ABBE861925AB6F00A911A9 /* ccFPSImages.h in Headers */ = {isa = PBXBuildFile; fileRef = 50ABBDF41925AB6E00A911A9 /* ccFPSImages.h */; };
 		50ABBE871925AB6F00A911A9 /* ccMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 50ABBDF51925AB6E00A911A9 /* ccMacros.h */; };
 		50ABBE881925AB6F00A911A9 /* ccMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 50ABBDF51925AB6E00A911A9 /* ccMacros.h */; };
 		50ABBE891925AB6F00A911A9 /* CCMap.h in Headers */ = {isa = PBXBuildFile; fileRef = 50ABBDF61925AB6E00A911A9 /* CCMap.h */; };
@@ -1416,8 +1410,6 @@
 		50ABBDF01925AB6E00A911A9 /* CCEventTouch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CCEventTouch.cpp; path = ../base/CCEventTouch.cpp; sourceTree = "<group>"; };
 		50ABBDF11925AB6E00A911A9 /* CCEventTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCEventTouch.h; path = ../base/CCEventTouch.h; sourceTree = "<group>"; };
 		50ABBDF21925AB6E00A911A9 /* CCEventType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCEventType.h; path = ../base/CCEventType.h; sourceTree = "<group>"; };
-		50ABBDF31925AB6E00A911A9 /* ccFPSImages.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ccFPSImages.c; path = ../base/ccFPSImages.c; sourceTree = "<group>"; };
-		50ABBDF41925AB6E00A911A9 /* ccFPSImages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ccFPSImages.h; path = ../base/ccFPSImages.h; sourceTree = "<group>"; };
 		50ABBDF51925AB6E00A911A9 /* ccMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ccMacros.h; path = ../base/ccMacros.h; sourceTree = "<group>"; };
 		50ABBDF61925AB6E00A911A9 /* CCMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCMap.h; path = ../base/CCMap.h; sourceTree = "<group>"; };
 		50ABBDF71925AB6E00A911A9 /* CCNS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CCNS.cpp; path = ../base/CCNS.cpp; sourceTree = "<group>"; };
@@ -1799,8 +1791,6 @@
 				50ABBDF01925AB6E00A911A9 /* CCEventTouch.cpp */,
 				50ABBDF11925AB6E00A911A9 /* CCEventTouch.h */,
 				50ABBDF21925AB6E00A911A9 /* CCEventType.h */,
-				50ABBDF31925AB6E00A911A9 /* ccFPSImages.c */,
-				50ABBDF41925AB6E00A911A9 /* ccFPSImages.h */,
 				503DD8F21926B0DB00CD74DD /* CCIMEDelegate.h */,
 				503DD8F31926B0DB00CD74DD /* CCIMEDispatcher.cpp */,
 				503DD8F41926B0DB00CD74DD /* CCIMEDispatcher.h */,
@@ -2387,7 +2377,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				50ABBE9B1925AB6F00A911A9 /* CCRef.h in Headers */,
-				50ABBE851925AB6F00A911A9 /* ccFPSImages.h in Headers */,
 				5034CA39191D591100CE6051 /* ccShader_PositionColorLengthTexture.frag in Headers */,
 				D0FD03591A3B51AA00825BB5 /* CCAllocatorStrategyDefault.h in Headers */,
 				50ABBE891925AB6F00A911A9 /* CCMap.h in Headers */,
@@ -2605,7 +2594,6 @@
 				507B3D4B1C31BDD30067B53E /* ExtensionDeprecated.h in Headers */,
 				507B3D4C1C31BDD30067B53E /* CCGLProgramState.h in Headers */,
 				507B3D4E1C31BDD30067B53E /* ccShaders.h in Headers */,
-				507B3D571C31BDD30067B53E /* ccFPSImages.h in Headers */,
 				507B3D5C1C31BDD30067B53E /* ccCArray.h in Headers */,
 				507B3D5E1C31BDD30067B53E /* AssetsManagerEx.h in Headers */,
 				507B3D661C31BDD30067B53E /* CCLock-apple.h in Headers */,
@@ -2820,7 +2808,6 @@
 				292DB16219B461CA00A80320 /* ExtensionDeprecated.h in Headers */,
 				50ABBD961925AB4100A911A9 /* CCGLProgramState.h in Headers */,
 				50ABBDB41925AB4100A911A9 /* ccShaders.h in Headers */,
-				50ABBE861925AB6F00A911A9 /* ccFPSImages.h in Headers */,
 				50ABBE2E1925AB6F00A911A9 /* ccCArray.h in Headers */,
 				15B3707B19EE414C00ABE682 /* AssetsManagerEx.h in Headers */,
 				50ABC0041926664800A911A9 /* CCLock-apple.h in Headers */,
@@ -3200,7 +3187,6 @@
 				15B3707819EE414C00ABE682 /* AssetsManagerEx.cpp in Sources */,
 				50ABBEB51925AB6F00A911A9 /* CCUserDefault-android.cpp in Sources */,
 				5E9F61261A3FFE3D0038DE01 /* CCFrustum.cpp in Sources */,
-				50ABBE831925AB6F00A911A9 /* ccFPSImages.c in Sources */,
 				50CB247719D9C5A100687767 /* AudioCache.mm in Sources */,
 				50ABBEA71925AB6F00A911A9 /* CCTouch.cpp in Sources */,
 				15FB209B1AE7C57D00C31518 /* sweep_context.cc in Sources */,
@@ -3398,7 +3384,6 @@
 				507B3CD21C31BDD30067B53E /* CCEventListenerMouse.cpp in Sources */,
 				507B3CD61C31BDD30067B53E /* CCFileUtils-apple.mm in Sources */,
 				507B3CD71C31BDD30067B53E /* ccUTF8.cpp in Sources */,
-				507B3CD91C31BDD30067B53E /* ccFPSImages.c in Sources */,
 				507B3CDB1C31BDD30067B53E /* CCEventAcceleration.cpp in Sources */,
 				507B3CDF1C31BDD30067B53E /* xxhash.c in Sources */,
 				507B3CE11C31BDD30067B53E /* CCAllocatorDiagnostics.cpp in Sources */,
@@ -3561,7 +3546,6 @@
 				50ABBE721925AB6F00A911A9 /* CCEventListenerMouse.cpp in Sources */,
 				50ABC0001926664800A911A9 /* CCFileUtils-apple.mm in Sources */,
 				50ABBEB81925AB6F00A911A9 /* ccUTF8.cpp in Sources */,
-				50ABBE841925AB6F00A911A9 /* ccFPSImages.c in Sources */,
 				50ABBE4A1925AB6F00A911A9 /* CCEventAcceleration.cpp in Sources */,
 				46C02E0818E91123004B7456 /* xxhash.c in Sources */,
 				D0FD034C1A3B51AA00825BB5 /* CCAllocatorDiagnostics.cpp in Sources */,
